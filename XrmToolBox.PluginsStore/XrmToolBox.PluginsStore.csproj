@@ -122,6 +122,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppInsights\AppInsights.cs" />
+    <Compile Include="CustomControls\ToolLibraryItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\ToolLibraryItem.Designer.cs">
+      <DependentUpon>ToolLibraryItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\XtbPlugin.cs" />
     <Compile Include="Extensions.cs" />
     <Compile Include="IStore.cs" />
@@ -156,10 +162,19 @@
     <Compile Include="PluginUpdates.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ProxySettingsHelper.cs" />
+    <Compile Include="ToolLibraryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolLibraryForm.Designer.cs">
+      <DependentUpon>ToolLibraryForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="XmlSerializerHelper.cs" />
     <Compile Include="XtbNugetPackage.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CustomControls\ToolLibraryItem.resx">
+      <DependentUpon>ToolLibraryItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LicenseAcceptanceForm.resx">
       <DependentUpon>LicenseAcceptanceForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,6 +188,9 @@
     <EmbeddedResource Include="StoreFormFromPortal.resx">
       <DependentUpon>StoreFormFromPortal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ToolLibraryForm.resx">
+      <DependentUpon>ToolLibraryForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XrmToolBox.Extensibility\XrmToolBox.Extensibility.csproj">
@@ -184,6 +202,7 @@
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

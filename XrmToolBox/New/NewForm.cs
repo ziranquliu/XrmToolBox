@@ -1482,6 +1482,10 @@ We recommend that you remove the corresponding files from XrmToolBox Plugins fol
         {
             if (e.ClickedItem == pluginsStoreToolStripMenuItem)
             {
+                var newForm = new ToolLibraryForm();
+                newForm.ShowDialog(this);
+                return;
+
                 if (pluginsForm == null)
                 {
                     return;
