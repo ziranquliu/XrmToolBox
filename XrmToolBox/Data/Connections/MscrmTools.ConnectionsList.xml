@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ConnectionsList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Files>
+    <ConnectionFile>
+      <LastUsed>2020-06-16T09:05:23.1236329+08:00</LastUsed>
+      <Name>CEP</Name>
+      <Path>C:\Users\ruifeng.chang\AppData\Roaming\MscrmTools\XrmToolBox\Connections\ConnectionsList.Default.xml</Path>
+    </ConnectionFile>
+  </Files>
+</ConnectionsList>

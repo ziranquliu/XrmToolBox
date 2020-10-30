@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFavorite xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Favorite>
+    <PluginName>SiteMap Editor</PluginName>
+  </Favorite>
+  <Favorite>
+    <PluginName>Attribute Manager</PluginName>
+  </Favorite>
+</ArrayOfFavorite>

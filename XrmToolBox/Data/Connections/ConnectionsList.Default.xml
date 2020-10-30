@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrmConnections xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ByPassProxyOnLocal>false</ByPassProxyOnLocal>
+  <Connections>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <ConnectionId>1f6f71bb-e966-43f0-8bda-cea345f8cae6</ConnectionId>
+      <ConnectionName>CEP-DEV-CRM</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>CRM</Organization>
+      <OrganizationDataServiceUrl>https://crm.geelycmadevdc.local:446/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>CRM</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://crm.geelycmadevdc.local:446/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>GEELYCRM</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://geelycrm.geelycmadevdc.local:446/</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>crm.geelycmadevdc.local</ServerName>
+      <ServerPort>80</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName />
+      <WebApplicationUrl>https://geelycrm.geelycmadevdc.local:446/</WebApplicationUrl>
+    </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <ConnectionId>94a268f2-ec9b-41c4-a217-8d976845a971</ConnectionId>
+      <ConnectionName>CEP-DEV-GEELYCRM</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>GEELYCRM</Organization>
+      <OrganizationDataServiceUrl>https://geelycrm.geelycmadevdc.local:446/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>GEELYCRM</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://geelycrm.geelycmadevdc.local:446/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>GEELYCRM</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://geelycrm.geelycmadevdc.local:446/</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>geelycrm.geelycmadevdc.local</ServerName>
+      <ServerPort>80</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName />
+      <WebApplicationUrl>https://geelycrm.geelycmadevdc.local:446/</WebApplicationUrl>
+    </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
+      <ConnectionName>CEP-SIT</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>CEPSIT</Organization>
+      <OrganizationDataServiceUrl>https://cepsit.lynkco.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>CEPSIT</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://cepsit.lynkco.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>CEPUAT</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://cepuat.lynkco.com/</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>cepsit.lynkco.com</ServerName>
+      <ServerPort>80</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName />
+      <WebApplicationUrl>https://cepsit.lynkco.com/</WebApplicationUrl>
+    </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <ConnectionId>7a213cd5-0a36-4417-a81c-9e6837b3a921</ConnectionId>
+      <ConnectionName>CEP-UAT</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>CEPUAT</Organization>
+      <OrganizationDataServiceUrl>https://cepuat.lynkco.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>CEPUAT</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://cepuat.lynkco.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>CEPUAT</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://cepuat.lynkco.com/</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>cepuat.lynkco.com</ServerName>
+      <ServerPort>80</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName />
+      <WebApplicationUrl>https://cepuat.lynkco.com/</WebApplicationUrl>
+    </ConnectionDetail>
+  </Connections>
+  <IsReadOnly>false</IsReadOnly>
+  <UseCustomProxy>false</UseCustomProxy>
+  <UseDefaultCredentials>false</UseDefaultCredentials>
+  <UseInternetExplorerProxy>false</UseInternetExplorerProxy>
+  <UseMruDisplay>false</UseMruDisplay>
+</CrmConnections>
