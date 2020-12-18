@@ -1,4 +1,5 @@
-﻿using System;
+﻿using McTools.Xrm.Connection;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
@@ -479,7 +480,8 @@ namespace XrmToolBox
                 OptinForApplicationInsights = OptinForApplicationInsights,
                 ConnectionControlsVersion = ConnectionControlsVersion,
                 ConnectionControlsAllowPreReleaseUpdates = ConnectionControlsAllowPreReleaseUpdates,
-                NumberOfDaysToShowNewRibbon = NumberOfDaysToShowNewRibbon
+                NumberOfDaysToShowNewRibbon = NumberOfDaysToShowNewRibbon,
+                RememberSession = RememberSession
             };
         }
 

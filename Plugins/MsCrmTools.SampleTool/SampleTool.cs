@@ -5,14 +5,16 @@
 
 using Microsoft.Crm.Sdk.Messages;
 using System;
+using System.Linq;
 using System.Windows.Forms;
+using XrmToolBox;
 using XrmToolBox.Extensibility;
 using XrmToolBox.Extensibility.Args;
 using XrmToolBox.Extensibility.Interfaces;
 
 namespace MsCrmTools.SampleTool
 {
-    public partial class SampleTool : PluginControlBase, IGitHubPlugin, ICodePlexPlugin, IPayPalPlugin, IHelpPlugin, IStatusBarMessenger, IShortcutReceiver, IAboutPlugin, IDuplicatableTool
+    public partial class SampleTool : PluginControlBase, IGitHubPlugin, ICodePlexPlugin, IPayPalPlugin, IHelpPlugin, IStatusBarMessenger, IShortcutReceiver, IAboutPlugin, IDuplicatableTool, ISettingsPlugin
     {
         #region Base tool implementation
 
@@ -219,10 +221,14 @@ namespace MsCrmTools.SampleTool
 
         #endregion IDuplicatableTool implementation
 
-        private void SampleTool_Load(object sender, EventArgs e)
+        #region ISettingsPlugin implementation
+
+        public void ShowSettings()
         {
-            ShowInfoNotification("This is a notification that can lead to XrmToolBox repository", new Uri("http://github.com/MscrmTools/XrmToolBox"));
+            MessageBox.Show(@"Settings should be displayed instead of this dialog");
         }
+
+        #endregion ISettingsPlugin implementation
 
         #region IAboutPlugin implementation
 
@@ -233,5 +239,19 @@ namespace MsCrmTools.SampleTool
         }
 
         #endregion IAboutPlugin implementation
+
+        private void btnCheckMultiSample_Click(object sender, EventArgs e)
+        {
+            var expectedPlugin = PluginManagerExtended.Instance.Plugins.FirstOrDefault(p =>
+                p.Value is PluginBase pb && pb.GetId() == Guid.Parse("{64A4E4E3-CAF9-4896-983A-341A297DEAF3}")
+            );
+
+            MessageBox.Show(expectedPlugin == null ? "Tool is not installed" : "Tool is installed");
+        }
+
+        private void SampleTool_Load(object sender, EventArgs e)
+        {
+            ShowInfoNotification("This is a notification that can lead to XrmToolBox repository", new Uri("http://github.com/MscrmTools/XrmToolBox"));
+        }
     }
 }

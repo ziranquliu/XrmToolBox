@@ -1193,9 +1193,20 @@ We recommend that you remove the corresponding files from XrmToolBox Plugins fol
 
         private PluginForm GetPluginByName(string name, Guid connectionDetailId)
         {
+            if (Guid.TryParse(name, out Guid pluginId) && !pluginId.Equals(Guid.Empty))
+            {
+                var expectedPlugin = PluginManagerExtended.Instance.Plugins.FirstOrDefault(p =>
+                    p.Value is PluginBase pb && pb.GetId().Equals(pluginId));
+
+                if (expectedPlugin != null)
+                {
+                    name = expectedPlugin.Metadata.Name;
+                }
+            }
+
             return dpMain.Contents
                 .OfType<PluginForm>()
-                .FirstOrDefault(c => c.PluginName == name
+                .LastOrDefault(c => c.PluginName == name
                                      && ((PluginControlBase)c.Control).ConnectionDetail.ConnectionId ==
                                      connectionDetailId);
         }
@@ -1239,8 +1250,8 @@ We recommend that you remove the corresponding files from XrmToolBox Plugins fol
 
             var sourceDetail = ((PluginControlBase)sender).ConnectionDetail;
 
-            var content = GetPluginByName(message.TargetPlugin, sourceDetail.ConnectionId ?? Guid.Empty);
-            if (content == null || message.NewInstance)
+            var content = message.NewInstance ? null : GetPluginByName(message.TargetPlugin, sourceDetail.ConnectionId ?? Guid.Empty);
+            if (content == null)
             {
                 pluginsForm.OpenPlugin(message.TargetPlugin);
             }
@@ -1547,7 +1558,7 @@ We recommend that you remove the corresponding files from XrmToolBox Plugins fol
             {
                 fHelper.DisplayConnectionsList(this);
             }
-            else if (e.ClickedItem == settingsToolStripMenuItem)
+            else if (e.ClickedItem == tsmiXtbSettings)
             {
                 var oDialog = new OptionsDialog(Options.Instance);
                 if (oDialog.ShowDialog(this) == DialogResult.OK)
@@ -1617,6 +1628,11 @@ Would you like to reinstall last stable release of connection controls?";
 
                     cManager.ReuseConnections = Options.Instance.ReuseConnections;
                 }
+            }
+            else if (e.ClickedItem == tsmiToolSettings)
+            {
+                var plugin = (ISettingsPlugin)((PluginForm)dpMain.ActiveContent).Control;
+                plugin.ShowSettings();
             }
         }
 
