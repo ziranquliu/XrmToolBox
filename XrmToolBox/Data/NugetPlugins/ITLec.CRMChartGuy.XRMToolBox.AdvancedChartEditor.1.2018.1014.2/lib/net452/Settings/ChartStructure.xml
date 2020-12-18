@@ -1,0 +1,3943 @@
+<Chart>
+	<Sections>
+		<Section>
+			<Name>Annotations</Name>
+			  <SubSections>
+				<SubSection>
+				  <Name>Annotations.TextAnnotation</Name>
+				</SubSection>
+			  </SubSections>
+		</Section>
+		<Section>
+			<Name></Name>
+			<Properties>
+				<Property>
+					<Name>Palette</Name>
+					<Type>Enum:Palettes</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Palette for chart. If "None", PaletteCustomColors is used.</Desc>
+				</Property>
+				<Property>
+					<Name>PaletteCustomColors</Name>
+					<Type>Enum:PaletteCustomColors</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Custom palette. Choose from options or type in your own colors. Option 1 is Dyn365 default, Option 2 is the Power BI color scheme.</Desc>
+				</Property>		
+			</Properties>
+			  <SubSections>
+				<SubSection>
+				  <Name>Annotations</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>Legends</Name>
+				</SubSection>		
+			  </SubSections>
+		</Section>
+		<Section>
+			<Name>Series.Series</Name>
+			<Properties>
+				<Property>
+					<Name>MarkerBorderColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>The border color of the marker.</Desc>
+					<GroupId>Series.Series.Markers</GroupId>
+				</Property>
+				<Property>
+					<Name>MarkerBorderWidth</Name>
+					<Type>Number:{Min=0,Max=200,DecimalPlaces=0,Increment=1}</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>The border width of the marker.</Desc>
+					<GroupId>Series.Series.Markers</GroupId>
+				</Property>
+				<Property>
+					<Name>MarkerColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>The marker color.</Desc>
+					<GroupId>Series.Series.Markers</GroupId>		
+				</Property>
+				<Property>
+					<Name>MarkerSize</Name>
+					<Type>Number:{Min=0,Max=2000,DecimalPlaces=0,Increment=1}</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>The size of the marker.</Desc>
+					<GroupId>Series.Series.Markers</GroupId>
+				</Property>
+				<Property>
+					<Name>MarkerStep</Name>
+					<Type>Number</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>An integer value that determines how often to display data point markers. The default value is one (1).</Desc>
+					<GroupId>Series.Series.Markers</GroupId>
+				</Property>
+				<Property>
+					<Name>MarkerStyle</Name>
+					<Type>Enum:MarkerStyle</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>Sets the marker style.</Desc>
+					<GroupId>Series.Series.Markers</GroupId>
+				</Property>			
+				<Property>
+					<Name>AxisLabel</Name>
+					<Type>Text</Type>
+					<DefaultValue></DefaultValue>
+					<GroupId>Series.Series.Other</GroupId>	
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Series is enabled by default. If set to "False" the series will not be visible on the chart.</Desc>
+					<GroupId>Series.Series.Other</GroupId>
+				</Property>	
+				<Property>
+					<Name>Palette</Name>
+					<Type>Enum:Palettes</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Using a palette will color each items of the series differently. Only system palettes can be used on a series.</Desc>
+					<GroupId>Series.Series.Other</GroupId>
+				</Property>		
+				<Property>
+					<Name>ShadowOffset</Name>
+					<Type>Number:{Min=-20,Max=20,DecimalPlaces=1,Increment=1}</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>To implement shadowing, use a value other than zero (0). A positive value will result in a shadow that shifts down and to the right. A negative value will result in a shadow that shifts up and to the left.</Desc>
+					<GroupId>Series.Series.Other</GroupId>
+				</Property>
+				<Property>
+					<Name>ShadowColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Gets or sets the shadow color of a series, which can be to any valid ARGB (alpha, red, green, blue) value. The alpha value can be used to achieve a realistic shadow effect; try using a color value of "128,0,0,0" for shadows.</Desc>
+					<GroupId>Series.Series.Other</GroupId>
+				</Property>
+				<Property> 
+					<Name>BorderDashStyle</Name>
+					<Type>Enum:DashStyle</Type>
+					<DefaultValue></DefaultValue>					
+					<Desc>DashStyle of border. Only applied if BorderWidth is 1 or higher.</Desc>
+					<GroupId>Series.Series.Border</GroupId>
+				</Property>				
+				<Property>
+					<Name>BorderColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Color of border. Only applied if BorderWidth is 1 or higher.</Desc>
+					<GroupId>Series.Series.Border</GroupId>
+				</Property>				
+				<Property>
+					<Name>BorderWidth</Name>
+					<Type>Number:{Min=0,Max=20,DecimalPlaces=0,Increment=1}</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Width of border in pixels. When used, also set BorderColor and BorderDashStyle. Also used for increasing width of line charts.</Desc> 
+					<GroupId>Series.Series.Border</GroupId>
+				</Property>				
+				<Property>
+					<Name>LabelForeColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>Color for the label text inside the chart if shown.</Desc>
+					<GroupId>Series.Series.Label</GroupId>
+				</Property>
+				<Property>
+					<Name>LabelFormat</Name>
+					<Type>Enum:NumberFormat</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>Use to change values to display in thousands/millions etc. Type your label format or select a preset option from the list. Or select from list and make changes as needed.</Desc>					
+					<GroupId>Series.Series.Label</GroupId>
+				</Property>	
+				<Property>
+					<Name>Label</Name>
+					<Type>Text</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>Label for this series. Overridden if IsValueShownAsLabel="True". Commonly supported keywords; #AXISLABEL, #PERCENT, #MIN, #MAX, #TOTAL, #FIRST, #LAST. Formatting of keyword values are not supported.</Desc>
+					<GroupId>Series.Series.Label</GroupId>
+				</Property>					
+				<Property>
+					<Name>IsValueShownAsLabel</Name>
+					<Type>Enum:Boolean</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>If "True", the value of the series is shown as the label. Format of number can be set in "LabelFormat". If "False" set the label in the "Label" property.</Desc>
+					<GroupId>Series.Series.Label</GroupId>
+				</Property>
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>
+					<DefaultValue>{0}, 9.5px</DefaultValue>					
+					<Desc>Font type and size for the label text inside the chart if shown.</Desc>
+					<GroupId>Series.Series.Label</GroupId>
+				</Property>
+				<Property>
+					<Name>XAxisType</Name>
+					<Type>Enum:AxisType</Type>
+					<DefaultValue></DefaultValue>					
+					<GroupId>Series.Series.Axis</GroupId>
+				</Property>
+				<Property>
+					<Name>YAxisType</Name>
+					<Type>Enum:AxisType</Type>
+					<DefaultValue></DefaultValue>					
+					<Desc>Is the series on the Primary or Secondary axis? If empty, series will be on the Primary axis by default.</Desc>	
+					<GroupId>Series.Series.Axis</GroupId>
+				</Property>
+				<Property>
+					<Name>BackGradientStyle</Name>
+					<Type>Enum:GradientStyle</Type>
+					<DefaultValue>None</DefaultValue>	
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>
+				<Property>
+					<Name>BackSecondaryColor</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>
+				<Property>
+					<Name>BackHatchStyle</Name>
+					<Type>Enum:ChartHatchStyle</Type>
+					<DefaultValue></DefaultValue>			
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>	
+				<Property>
+					<Name>Color</Name>
+					<Type>Color</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>The color for this individual series. If empty, color palette will be used.</Desc>
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>				
+				<Property>
+					<Name>LegendText</Name>
+					<Type>Text</Type>
+					<DefaultValue></DefaultValue>	
+					<Desc>Text to be shown in the legend for this series.</Desc>
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>						
+				<Property>
+					<Name>IsVisibleInLegend</Name>
+					<Type>Enum:Boolean</Type>
+					<DefaultValue></DefaultValue>
+					<Desc>Set to false to remove item from appearing in the legend.</Desc>
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>				
+				<Property>
+					<Name>ChartType</Name>
+					<Type>Enum:ChartType</Type>
+					<DefaultValue></DefaultValue>
+					<GroupId>Series.Series.Common</GroupId>
+				</Property>				
+			</Properties>
+		</Section>
+		<Section>
+			<Name>Series.Series.CustomProperties.Column</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>				
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>		
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.Column.General</GroupId>			
+				</Property>
+				<Property>
+					<Name>DrawSideBySide</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Specifies whether series of the same chart type are drawn next to each other instead of overlapping each other.</Desc>
+					<GroupId>Series.Series.CustomProperties.Column.General</GroupId>
+				</Property>
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Column.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedColumn</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>				
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>StackedGroupName</Name>
+				  <Type>Text</Type>
+				  <Desc>This property allows you to stack multiple different bars or columns into different groups. Only applies when you have multiple stacked series that needs to go into different gorups. If used, each stacked series in the chart should have a StackedGroupName.</Desc>
+				  <GroupId>Series.Series.CustomProperties.StackedColumn.General</GroupId>
+				</Property>						
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedColumn.General</GroupId>			
+				</Property>
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedColumn.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedColumn100</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>				
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>		
+				<Property>
+				  <Name>StackedGroupName</Name>
+				  <Type>Text</Type>
+				  <Desc>This property allows you to stack multiple different bars or columns into different groups. Only applies when you have multiple stacked series that needs to go into different gorups. If used, each stacked series in the chart should have a StackedGroupName.</Desc>
+				  <GroupId>Series.Series.CustomProperties.StackedColumn100.General</GroupId>
+				</Property>	
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedColumn100.General</GroupId>			
+				</Property>
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedColumn100.General</GroupId>
+				</Property>					
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>Series.Series.CustomProperties.Area</Name>
+			<Properties>	
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}r</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>				
+				<Property>
+				  <Name>ShowMarkerLines</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>3D charts only. Specifies whether marker lines are displayed when rendered in 3D.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>	
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Area.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedArea</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedArea100</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.Bar</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>				
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>	
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bar.General</GroupId>
+				</Property>
+				<Property>
+					<Name>DrawSideBySide</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Specifies whether series of the same chart type are drawn next to each other instead of overlapping each other.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bar.General</GroupId>
+				</Property>
+				<Property>
+					<Name>BarLabelStyle</Name>
+					<Type>Enum:BarLabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bar.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedBar</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>				
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>						
+				<Property>
+				  <Name>StackedGroupName</Name>
+				  <Type>Text</Type>
+				  <Desc>This property allows you to stack multiple different bars or columns into different groups. Only applies when you have multiple stacked series that needs to go into different gorups. If used, each stacked series in the chart should have a StackedGroupName.</Desc>
+				  <GroupId>Series.Series.CustomProperties.StackedBar.General</GroupId>
+				</Property>		
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedBar.General</GroupId>
+				</Property>
+				<Property>
+					<Name>BarLabelStyle</Name>
+					<Type>Enum:BarLabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedBar.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.StackedBar100</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>MaxPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the maximum width of the data point in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>MinPixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the minimum data point width in pixels. This property causes data points to be more visible. This is especially useful when plotting a large data set, which causes individual data points to be indistinguishable.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Specifies the data point width in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>
+				<Property>
+				  <Name>PointWidth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=.1}</Type>
+				  <Desc>The data point width.</Desc>
+				  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+				</Property>						
+				<Property>
+				  <Name>StackedGroupName</Name>
+				  <Type>Text</Type>
+				  <Desc>This property allows you to stack multiple different bars or columns into different groups. Only applies when you have multiple stacked series that needs to go into different gorups. If used, each stacked series in the chart should have a StackedGroupName.</Desc>
+				  <GroupId>Series.Series.CustomProperties.StackedBar100.General</GroupId>
+				</Property>	
+				<Property>
+					<Name>DrawingStyle</Name>
+					<Type>Enum:DrawingStyle</Type>
+					<Desc>Change the appearance of the column or bar.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedBar100.General</GroupId>
+				</Property>
+				<Property>
+					<Name>BarLabelStyle</Name>
+					<Type>Enum:BarLabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.StackedBar100.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.Line</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>				
+				<Property>
+				  <Name>ShowMarkerLines</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>3D charts only. Specifies whether marker lines are displayed when rendered in 3D.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>	
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Line.General</GroupId>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.pie</Name>
+			<Properties>
+				<Property>
+				  <Name>CollectedColor</Name>
+				  <Type>Enum:NamedColors</Type>
+				  <Desc>RGB not supported. Only HEX and named colors. The color of the collected pie or doughnut slice. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLabel</Name>
+				  <Type>Text</Type>
+				  <Desc>The label text for the collected pie slice.Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLegendText</Name>
+				  <Type>Text</Type>
+				  <Desc>The label of the collected pie slice. Supports #KEYWORDS like #TOTAL. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedSliceExploded</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether the collected pie slice will be shown as exploded. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedThreshold</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>
+				  <Desc>The threshold value for collecting small pie slices. Uses actual value. Uses a percent value if CollectedThresholdUsePercent="True".</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>		
+				<Property>
+				  <Name>CollectedThresholdUsePercent</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether to use the collected threshold value as a percentage. If true, set CollectedThreshold to a value from 0-100.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>	
+				<Property>
+				  <Name>CollectedToolTip</Name>
+				  <Type>Text</Type>
+				  <Desc>The tooltip text for the collected pie slice. Supports keywords like #MAX.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsHorizontalLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the horizontal segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsRadialLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the radial segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>MinimumRelativePieSize</Name>
+				  <Type>Number:{Min=10,Max=70,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The minimum pie or doughnut size. Value range 10 - 70, Default value 30.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLabelStyle</Name>
+				  <Type>Enum:PieLabelStyle</Type>
+				  <Desc>Positioning of the label.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLineColor</Name>
+				  <Type>Enum:NamedColors</Type>
+				  <Desc>RGB not supported. Only HEX and named colors. Color of the radial and horizontal segments of the callout lines. Only applies if LabelsRadialLineSize or LabelsHorizontalLineSize are used.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieStartAngle</Name>
+				  <Type>Number:{Min=0,Max=360,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Value between 0 and 360 degrees. Pie/doughnut charts by default start in the 3 o’clock position. The 3 o’clock position is 0 degrees. 12 o'clock position is 270</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieDrawingStyle</Name>
+				  <Type>Enum:PieDrawingStyle</Type>
+				  <Desc>Drawing style of the pie or doughnut.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Series.Series.CustomProperties.Pie</Name>
+			<Properties>
+				<Property>
+				  <Name>CollectedColor</Name>
+				  <Type>Enum:NamedColors</Type>
+				  <Desc>RGB not supported. Only HEX and named colors. The color of the collected pie or doughnut slice. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLabel</Name>
+				  <Type>Text</Type>
+				  <Desc>The label text for the collected pie slice.Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLegendText</Name>
+				  <Type>Text</Type>
+				  <Desc>The label of the collected pie slice. Supports #KEYWORDS like #TOTAL. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedSliceExploded</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether the collected pie slice will be shown as exploded. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedThreshold</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>
+				  <Desc>The threshold value for collecting small pie slices. Uses actual value. Uses a percent value if CollectedThresholdUsePercent="True".</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>		
+				<Property>
+				  <Name>CollectedThresholdUsePercent</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether to use the collected threshold value as a percentage. If true, set CollectedThreshold to a value from 0-100.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>	
+				<Property>
+				  <Name>CollectedToolTip</Name>
+				  <Type>Text</Type>
+				  <Desc>The tooltip text for the collected pie slice. Supports keywords like #MAX.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsHorizontalLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the horizontal segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsRadialLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the radial segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>MinimumRelativePieSize</Name>
+				  <Type>Number:{Min=10,Max=70,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The minimum pie or doughnut size. Value range 10 - 70, Default value 30.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLabelStyle</Name>
+				  <Type>Enum:PieLabelStyle</Type>
+				  <Desc>Positioning of the label.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLineColor</Name>
+				  <Type>Enum:NamedColors</Type>
+				  <Desc>RGB not supported. Only HEX and named colors. Color of the radial and horizontal segments of the callout lines. Only applies if LabelsRadialLineSize or LabelsHorizontalLineSize are used.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieStartAngle</Name>
+				  <Type>Number:{Min=0,Max=360,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Value between 0 and 360 degrees. Pie/doughnut charts by default start in the 3 o’clock position. The 3 o’clock position is 0 degrees. 12 o'clock position is 270</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieDrawingStyle</Name>
+				  <Type>Enum:PieDrawingStyle</Type>
+				  <Desc>Drawing style of the pie or doughnut.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+				</Property>					
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>Series.Series.CustomProperties.doughnut</Name>
+			<Properties>
+				<Property>
+					<Name>CollectedColor</Name>
+					<Type>Enum:NamedColors</Type>
+					<Desc>RGB not supported. Only HEX and named colors. The color of the collected pie or doughnut slice. Only applies when CollectedThreshold is populated.</Desc>
+					<GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLabel</Name>
+				  <Type>Text</Type>
+				  <Desc>The label text for the collected pie slice.Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedLegendText</Name>
+				  <Type>Text</Type>
+				  <Desc>The label of the collected pie slice. Supports #KEYWORDS like #TOTAL. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedSliceExploded</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether the collected pie slice will be shown as exploded. Only applies when CollectedThreshold is populated.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>
+				<Property>
+				  <Name>CollectedThreshold</Name>
+				  <Type>Number:{Min=0,Max=10000000,DecimalPlaces=2,Increment=1}</Type>
+				  <Desc>The threshold value for collecting small pie slices. Uses actual value. Uses a percent value if CollectedThresholdUsePercent="True".</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>		
+				<Property>
+				  <Name>CollectedThresholdUsePercent</Name>
+				  <Type>Enum:Boolean</Type>
+				  <Desc>Whether to use the collected threshold value as a percentage. If true, set CollectedThreshold to a value from 0-100.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>CollectedToolTip</Name>
+				  <Type>Text</Type>
+				  <Desc>The tooltip text for the collected pie slice. Supports keywords like #MAX.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsHorizontalLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the horizontal segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.LabelLinesDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>LabelsRadialLineSize</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The size of the radial segment of the callout line, as a percentage of the chart area.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.LabelLinesDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLineColor</Name>
+				  <Type>Enum:NamedColors</Type>
+				  <Desc>RGB not supported. Only HEX and named colors. Color of the radial and horizontal segments of the callout lines. Only applies if LabelsRadialLineSize or LabelsHorizontalLineSize are used.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.LabelLinesDoughnut</GroupId>
+				</Property>				
+				<Property>
+				  <Name>MinimumRelativePieSize</Name>
+				  <Type>Number:{Min=10,Max=70,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The minimum pie or doughnut size. Value range 10 - 70, Default value 30.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieLabelStyle</Name>
+				  <Type>Enum:PieLabelStyle</Type>
+				  <Desc>Positioning of the label.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+				</Property>	
+				<Property>
+				  <Name>PieStartAngle</Name>
+				  <Type>Number:{Min=0,Max=360,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Value between 0 and 360 degrees. Pie/doughnut charts by default start in the 3 o’clock position. The 3 o’clock position is 0 degrees. 12 o'clock position is 270</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+				</Property>	
+				<Property>
+					<Name>DoughnutRadius</Name>
+					<Type>Number:{Min=0,Max=99,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>Value from 0-99. Default 60. The larger the value of DoughnutRadius, the smaller the hole of the chart. If set to 99, the doughnut hole looks very small and looks like a Pie chart.</Desc>
+					<GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+				</Property>					
+				<Property>
+				  <Name>PieDrawingStyle</Name>
+				  <Type>Enum:PieDrawingStyle</Type>
+				  <Desc>Drawing style of the pie or doughnut.</Desc>
+				  <GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+				</Property>					
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>Series.Series.CustomProperties.Funnel</Name>
+			<Properties>
+				<Property>
+					<Name>CalloutLineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The line color of the callout for the labels of Funnel and Pyramid charts.</Desc>
+					<GroupId>Series.Series.CustomProperties.Funnel.Label</GroupId>
+				</Property>
+				<Property>
+				  <Name>FunnelInsideLabelAlignment</Name>
+				  <Type>Enum:FunnelInsideLabelAlignment</Type>
+				  <Desc>Placement of label inside the funnel. Only applies if FunnelLabelStyle is set to "Inside"</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.Label</GroupId>
+				</Property>
+				<Property>
+				  <Name>FunnelOutsideLabelPlacement</Name>
+				  <Type>Enum:FunnelOutsideLabelPlacement</Type>
+				  <Desc>Placement of the data label outside the Funnel chart. Only applies FunnelLabelStyle = Outside or OutsideInColumn.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.Label</GroupId>
+				</Property>					
+				<Property>
+				  <Name>FunnelLabelStyle</Name>
+				  <Type>Enum:FunnelLabelStyle</Type>
+				  <Desc>Sets the placement of the data label.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.Label</GroupId>
+				</Property>
+				<Property>
+				  <Name>FunnelMinPointHeight</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>Minimum height of a data point in the Funnel chart, measured in relative coordinates. Value range 0-100, default 0. Specifying a value eliminates very thin slices.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+				</Property>	
+				<Property>
+				  <Name>FunnelPointGap</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The gap size between the points of a Funnel chart, measured in relative coordinates. Value range 0-100. Default 0.</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+				</Property>					
+				<Property>
+				  <Name>FunnelNeckHeight</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The neck height of the Funnel chart as a percentage of the chart. Value range 0-100. Default 5. Only applies if FunnelStyle="YIsHeight"</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+				</Property>	
+				<Property>
+				  <Name>FunnelNeckWidth</Name>
+				  <Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>The neck width of the Funnel chart as a percentage of the chart. Value range 0-100. Default 5. Only applies if FunnelStyle="YIsWidth"</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+				</Property>	
+				<Property>
+				  <Name>FunnelStyle</Name>
+				  <Type>Enum:FunnelStyle</Type>
+				  <Desc>Defines if the value is represented by the heigth of each area, or by the width.Default = YIsHeight</Desc>
+				  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+				</Property>					
+			</Properties>
+		</Section>
+		<Section>
+			<Name>Series.Series.CustomProperties.Point</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>	
+				<Property>
+					<Name>EmptyPointValue</Name>
+					<Type>Enum:EmptyPointValue</Type>
+					<Desc>If a value of Average is used, the chart is drawn as though a point exists, and has a value of the average of the two adjacent points. If Zero is used, the chart is drawn as though a point exists with a zero value.</Desc>
+					<GroupId>Series.Series.CustomProperties.Point.General</GroupId>
+				</Property>
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Point.General</GroupId>
+				</Property>				
+			</Properties>
+		</Section>
+		<Section>
+			<Name>Series.Series.CustomProperties.Bubble</Name>
+			<Properties>
+				<Property>
+				  <Name>PixelPointDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D series depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>
+				<Property>
+				  <Name>PixelPointGapDepth</Name>
+				  <Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>
+				  <Desc>3D charts only. Specifies the 3D gap depth in pixels.</Desc>
+				  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+				</Property>	
+				<Property>
+					<Name>EmptyPointValue</Name>
+					<Type>Enum:EmptyPointValue</Type>
+					<Desc>If a value of Average is used, the chart is drawn as though a point exists, and has a value of the average of the two adjacent points. If Zero is used, the chart is drawn as though a point exists with a zero value.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.Other</GroupId>
+				</Property>				
+				<Property>
+					<Name>BubbleScaleMax</Name>
+					<Type>Number:{Min=0,Max=10000000000000000,DecimalPlaces=0,Increment=1}</Type>
+					<Desc>Recommended to leave as empty or "Auto". Specifies the Y value that is represented by the maximum bubble size, which is set by BubbleMaxSize.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.Other</GroupId>
+				</Property>
+				<Property>
+					<Name>BubbleScaleMin</Name>
+					<Type>Number:{Min=0,Max=10000000000000000,DecimalPlaces=0,Increment=1}</Type>
+					<Desc>Recommended to leave as empty or "Auto". Specifies the Y value that is represented by the maximum bubble size, which is set by BubbleMinSize.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.Other</GroupId>
+				</Property>			
+				<Property>
+					<Name>BubbleMaxSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+					<Desc>Specifies the maximum size of the bubble radius as a percentage of the chart area size. Default is 15</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.General</GroupId>
+				</Property>
+				<Property>
+					<Name>BubbleMinSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>
+					<Desc>Specifies the minimum size of the bubble radius as a percentage of the chart area size. Default is 3</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.General</GroupId>
+				</Property>				
+				<Property>
+					<Name>BubbleUseSizeForLabel</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Specifies whether to use the bubble size as the data point label.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.General</GroupId>
+				</Property>		
+				<Property>
+					<Name>LabelStyle</Name>
+					<Type>Enum:LabelStyle</Type>	
+					<Desc>Specifies the label position of the data point.</Desc>
+					<GroupId>Series.Series.CustomProperties.Bubble.General</GroupId>
+				</Property>	
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea</Name>
+			<Properties>
+				<Property>
+					<Name>BackColor</Name>
+					<Type>Color</Type>		
+					<Desc>Sets the background color of the chart area.</Desc>
+				</Property>
+				<Property>
+					<Name>BackGradientStyle</Name>
+					<Type>Enum:GradientStyle</Type>
+					<Desc>Sets the orientation for the background gradient of a chart area, and also determines whether or not a gradient is used.</Desc>	
+				</Property>
+				<Property>
+					<Name>BackSecondaryColor</Name>
+					<Type>Color</Type>
+					<Desc>Sets the secondary color for the background of the chart area.</Desc>
+				</Property>
+				<Property>
+					<Name>BackHatchStyle</Name>
+					<Type>Enum:ChartHatchStyle</Type>	
+					<Desc>Sets the HatchStyle for the background.</Desc>
+				</Property>	
+				<Property>
+					<Name>BorderWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>The width of the border measured in pixels.</Desc>
+				</Property>				
+				<Property>
+					<Name>BorderColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the border line. Only applies if BorderWidth is 1 or higher.</Desc>
+				</Property>
+				<Property>
+					<Name>BorderDashStyle</Name>
+					<Type>Enum:DashStyle</Type>	
+					<Desc>The dash style of the border. Only applies if BorderWidth is 1 or higher.</Desc>
+				</Property>	
+				<Property>
+					<Name>Visible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Toggles visibility of the chart area. Effective hides the entire chart. Probably good idea to not change this one.</Desc>
+				</Property>					
+			</Properties>
+			<SubSections>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2</Name>
+				</SubSection>
+			</SubSections>
+		</Section>
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY</Name>
+			<Properties>
+				<Property>
+					<Name>ArrowStyle</Name>
+					<Type>Enum:AxisArrowStyle</Type>
+					<Desc>Sets the arrow style of a two-dimensional (2D) axis; this style is not applied to three-dimensional (3D) chart areas.</Desc>
+				</Property>
+				<Property>
+					<Name>Crossing</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value at which an axis is crossed by its associated axis. I.e. can change the center point of the axis and bars/columns can move in either direction. Consider setting IsMarksNextToAxis to "False" if used.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Enabled by default. If "False", the axis and title is removed entirely, but bars/columns and series will remain.</Desc>
+				</Property>
+				<Property>
+					<Name>InterlacedColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of interlaced strip lines. Colors the interval between the major gridlines. Only applies if IsInterlaced="True"</Desc>
+				</Property>	
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=99999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the interval of an axis. The Interval property of a major tick mark, grid line or label of the axis has priority over the Interval property setting of the Axis object.</Desc>
+				</Property>				
+				<Property>
+					<Name>IntervalAutoMode</Name>
+					<Type>Enum:FixedVariable</Type>	
+					<Desc>Determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the interval offset of an axis. I.e. the value 100 would mean the labels on the axis start at the value 100.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsInterlaced</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines if interlaced strip lines are displayed for an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLabelAutoFit</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether axis labels are automatically fitted.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLogarithmic</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts. Optionally use LogarithmBase in conjunction with this property.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarginVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether an axis margin will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarksNextToAxis</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes. Set to "False" if crossing is used or chart includes both positive and negative values.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsReversed</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Reverses the orientation of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStartedFromZero</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Use to highligth subtle differences in datasets that have large amounts. Indicates if the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMaxFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The maximum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMinFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The minimum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>		
+				<Property>
+					<Name>LabelAutoFitStyle</Name>
+					<Type>Enum:LabelAutoFitStyle</Type>	
+					<Desc>Sets the allowable label changes that can be made to enable the label to be fit along an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the line color of the axis.</Desc>
+				</Property>					
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>	
+					<Desc>Sets the dash style of the line of the axis.</Desc>
+				</Property>
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the axis in pixels.</Desc>
+				</Property>	
+				<Property>
+					<Name>LogarithmBase</Name>
+					<Type>Number:{Min=99999999999,Max=9999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Value that represents the logarithm base value for the logarithmic axis. The default value is base 10.</Desc>
+				</Property>				
+				<Property>
+					<Name>Maximum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the maximum value of an axis. I.e. if charting a scale that goes from 0-100, set the max to 100 to avoid the chart being longer than the actual values.</Desc>
+				</Property>	
+				<Property>
+					<Name>Minimum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the minimum value of an axis.</Desc>
+				</Property>		
+				<Property>
+					<Name>MaximumAutoSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>Sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</Desc>
+				</Property>			
+				<Property>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Desc>Sets the title of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleAlignment</Name>
+					<Type>Enum:StringAlignment</Type>	
+					<Desc>Sets the alignment of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleFont</Name>
+					<Type>Font</Type>	
+					<Desc>Sets the title font properties of an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the text color of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>ToolTip</Name>
+					<Type>Text</Type>	
+					<Desc>Sets the tooltip used for the axis.</Desc>
+				</Property>					
+			</Properties>
+			  <SubSections>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.MajorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.MajorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.MinorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.MinorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.LabelStyle</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY.ScaleBreakStyle</Name>
+				</SubSection>				
+			  </SubSections>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.LabelStyle</Name>
+			<Properties>
+				<Property>
+					<Name>Angle</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>Sets a value that represents the angle at which the font is drawn.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets a flag that indicates whether the label is enabled.</Desc>
+				</Property>
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>
+					<Desc>Sets the font of the label.</Desc>
+				</Property>
+				<Property>
+					<Name>ForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of the label.</Desc>
+				</Property>	
+				<Property>
+					<Name>Format</Name>
+					<Type>Enum:NumberFormat</Type>	
+					<Desc>Sets the format. Used for values. Select from the list to show values in the thousands or millions, or type a custom format to use.</Desc>
+				</Property>				
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the unit of measurement of the label interval offset. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets the unit of measurement of the label interval. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsEndLabelVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether the labels are shown at axis ends.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStaggered</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels are shown with an offset.</Desc>
+				</Property>	
+				<Property>
+					<Name>TruncatedLabels</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels can be truncated. Dynamics 365 will often override this setting and truncate anyway.</Desc>
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.MajorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.MajorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.MinorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.MinorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY.ScaleBreakStyle</Name>
+			<Properties>
+				<Property>
+					<Name>BreakLineStyle</Name>
+					<Type>Enum:BreakLineStyle</Type>	
+					<Desc>The style of the break line that will be used to draw the scale break.</Desc>
+				</Property>			
+				<Property>
+					<Name>CollapsibleSpaceThreshold</Name>
+					<Type>Number:{Min=10,Max=90,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>The CollapsibleSpaceThreshold property is a percentage of the Y axis. The default value for 25 means that the data in your series must have a difference of at least 25% for the ScaleBreak to appear. Value range 10-90, Default ="25"</Desc>					
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc>Is the ScaleBreak enabled. Must be set to "True" for other scale break properties to take effect.</Desc>
+					</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>					
+					<Desc>The color of the scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the scale break line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>					
+					<Desc>The width of hte scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>MaxNumberOfBreaks</Name>
+					<Type>Number:{Min=0,Max=5,DecimalPlaces=0,Increment=1}</Type>			
+					<Desc>Max number of breaks supported. Value range 0-5, default ="2"</Desc>					
+				</Property>	
+				<Property>
+					<Name>Spacing</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>Value represent the gap of the break as percentage of the axis. Value range 0-10, default ="1.5" percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>StartFromZero</Name>
+					<Type>Enum:StartFromZero</Type>					
+					<Desc>Defines if the chart should start looking for possible scale breaks from either zero, or from the lowest value in your data set. Default ="Auto"</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX</Name>
+			<Properties>
+				<Property>
+					<Name>ArrowStyle</Name>
+					<Type>Enum:AxisArrowStyle</Type>
+					<Desc>Sets the arrow style of a two-dimensional (2D) axis; this style is not applied to three-dimensional (3D) chart areas.</Desc>
+				</Property>
+				<Property>
+					<Name>Crossing</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value at which an axis is crossed by its associated axis. I.e. can change the center point of the axis and bars/columns can move in either direction. Consider setting IsMarksNextToAxis to "False" if used.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Enabled by default. If "False", the axis and title is removed entirely, but bars/columns and series will remain.</Desc>
+				</Property>
+				<Property>
+					<Name>InterlacedColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of interlaced strip lines. Colors the interval between the major gridlines. Only applies if IsInterlaced="True"</Desc>
+				</Property>	
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=99999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the interval of an axis. The Interval property of a major tick mark, grid line or label of the axis has priority over the Interval property setting of the Axis object.</Desc>
+				</Property>				
+				<Property>
+					<Name>IntervalAutoMode</Name>
+					<Type>Enum:FixedVariable</Type>	
+					<Desc>Determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the interval offset of an axis. I.e. the value 100 would mean the labels on the axis start at the value 100.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsInterlaced</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines if interlaced strip lines are displayed for an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLabelAutoFit</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether axis labels are automatically fitted.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLogarithmic</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts. Optionally use LogarithmBase in conjunction with this property.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarginVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether an axis margin will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarksNextToAxis</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes. Set to "False" if crossing is used or chart includes both positive and negative values.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsReversed</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Reverses the orientation of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStartedFromZero</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Use to highligth subtle differences in datasets that have large amounts. Indicates if the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMaxFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The maximum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMinFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The minimum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>		
+				<Property>
+					<Name>LabelAutoFitStyle</Name>
+					<Type>Enum:LabelAutoFitStyle</Type>	
+					<Desc>Sets the allowable label changes that can be made to enable the label to be fit along an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the line color of the axis.</Desc>
+				</Property>					
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>	
+					<Desc>Sets the dash style of the line of the axis.</Desc>
+				</Property>
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the axis in pixels.</Desc>
+				</Property>	
+				<Property>
+					<Name>LogarithmBase</Name>
+					<Type>Number:{Min=99999999999,Max=9999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Value that represents the logarithm base value for the logarithmic axis. The default value is base 10.</Desc>
+				</Property>				
+				<Property>
+					<Name>Maximum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the maximum value of an axis. I.e. if charting a scale that goes from 0-100, set the max to 100 to avoid the chart being longer than the actual values.</Desc>
+				</Property>	
+				<Property>
+					<Name>Minimum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the minimum value of an axis.</Desc>
+				</Property>		
+				<Property>
+					<Name>MaximumAutoSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>Sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</Desc>
+				</Property>			
+				<Property>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Desc>Sets the title of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleAlignment</Name>
+					<Type>Enum:StringAlignment</Type>	
+					<Desc>Sets the alignment of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleFont</Name>
+					<Type>Font</Type>	
+					<Desc>Sets the title font properties of an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the text color of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>ToolTip</Name>
+					<Type>Text</Type>	
+					<Desc>Sets the tooltip used for the axis.</Desc>
+				</Property>					
+			</Properties>
+			   <SubSections>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.MajorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.MajorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.MinorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.MinorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.LabelStyle</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX.ScaleBreakStyle</Name>
+				</SubSection>				
+			  </SubSections>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.LabelStyle</Name>
+			<Properties>
+				<Property>
+					<Name>Angle</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>Sets a value that represents the angle at which the font is drawn.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets a flag that indicates whether the label is enabled.</Desc>
+				</Property>
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>
+					<Desc>Sets the font of the label.</Desc>
+				</Property>
+				<Property>
+					<Name>ForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of the label.</Desc>
+				</Property>	
+				<Property>
+					<Name>Format</Name>
+					<Type>Enum:NumberFormat</Type>	
+					<Desc>Sets the format. Used for values. Select from the list to show values in the thousands or millions, or type a custom format to use.</Desc>
+				</Property>				
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the unit of measurement of the label interval offset. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets the unit of measurement of the label interval. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsEndLabelVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether the labels are shown at axis ends.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStaggered</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels are shown with an offset.</Desc>
+				</Property>	
+				<Property>
+					<Name>TruncatedLabels</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels can be truncated. Dynamics 365 will often override this setting and truncate anyway.</Desc>
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.MajorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.MajorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.MinorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.MinorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX.ScaleBreakStyle</Name>
+			<Properties>
+				<Property>
+					<Name>BreakLineStyle</Name>
+					<Type>Enum:BreakLineStyle</Type>	
+					<Desc>The style of the break line that will be used to draw the scale break.</Desc>
+				</Property>			
+				<Property>
+					<Name>CollapsibleSpaceThreshold</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>The CollapsibleSpaceThreshold property is a percentage of the Y axis. The default value for 25 means that the data in your series must have a difference of at least 25% for the ScaleBreak to appear. Value range 10-90, Default ="25"</Desc>					
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc>Is the ScaleBreak enabled. Must be set to "True" for other scale break properties to take effect.</Desc>
+					</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>					
+					<Desc>The color of the scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the scale break line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>					
+					<Desc>The width of hte scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>MaxNumberOfBreaks</Name>
+					<Type>Number:{Min=0,Max=5,DecimalPlaces=0,Increment=1}</Type>			
+					<Desc>Max number of breaks supported. Value range 0-5, default ="2"</Desc>					
+				</Property>	
+				<Property>
+					<Name>Spacing</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>Value represent the gap of the break as percentage of the axis. Value range 0-10, default ="1.5" percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>StartFromZero</Name>
+					<Type>Enum:StartFromZero</Type>					
+					<Desc>Defines if the chart should start looking for possible scale breaks from either zero, or from the lowest value in your data set. Default ="Auto"</Desc>
+				</Property>					
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2</Name>
+			<Properties>
+				<Property>
+					<Name>ArrowStyle</Name>
+					<Type>Enum:AxisArrowStyle</Type>
+					<Desc>Sets the arrow style of a two-dimensional (2D) axis; this style is not applied to three-dimensional (3D) chart areas.</Desc>
+				</Property>
+				<Property>
+					<Name>Crossing</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value at which an axis is crossed by its associated axis. I.e. can change the center point of the axis and bars/columns can move in either direction. Consider setting IsMarksNextToAxis to "False" if used.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Enabled by default. If "False", the axis and title is removed entirely, but bars/columns and series will remain.</Desc>
+				</Property>
+				<Property>
+					<Name>InterlacedColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of interlaced strip lines. Colors the interval between the major gridlines. Only applies if IsInterlaced="True"</Desc>
+				</Property>	
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=99999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the interval of an axis. The Interval property of a major tick mark, grid line or label of the axis has priority over the Interval property setting of the Axis object.</Desc>
+				</Property>				
+				<Property>
+					<Name>IntervalAutoMode</Name>
+					<Type>Enum:FixedVariable</Type>	
+					<Desc>Determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the interval offset of an axis. I.e. the value 100 would mean the labels on the axis start at the value 100.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsInterlaced</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines if interlaced strip lines are displayed for an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLabelAutoFit</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether axis labels are automatically fitted.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLogarithmic</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts. Optionally use LogarithmBase in conjunction with this property.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarginVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether an axis margin will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarksNextToAxis</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes. Set to "False" if crossing is used or chart includes both positive and negative values.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsReversed</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Reverses the orientation of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStartedFromZero</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Use to highligth subtle differences in datasets that have large amounts. Indicates if the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMaxFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The maximum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMinFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The minimum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>		
+				<Property>
+					<Name>LabelAutoFitStyle</Name>
+					<Type>Enum:LabelAutoFitStyle</Type>	
+					<Desc>Sets the allowable label changes that can be made to enable the label to be fit along an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the line color of the axis.</Desc>
+				</Property>					
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>	
+					<Desc>Sets the dash style of the line of the axis.</Desc>
+				</Property>
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the axis in pixels.</Desc>
+				</Property>	
+				<Property>
+					<Name>LogarithmBase</Name>
+					<Type>Number:{Min=99999999999,Max=9999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Value that represents the logarithm base value for the logarithmic axis. The default value is base 10.</Desc>
+				</Property>				
+				<Property>
+					<Name>Maximum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the maximum value of an axis. I.e. if charting a scale that goes from 0-100, set the max to 100 to avoid the chart being longer than the actual values.</Desc>
+				</Property>	
+				<Property>
+					<Name>Minimum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the minimum value of an axis.</Desc>
+				</Property>		
+				<Property>
+					<Name>MaximumAutoSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>Sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</Desc>
+				</Property>			
+				<Property>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Desc>Sets the title of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleAlignment</Name>
+					<Type>Enum:StringAlignment</Type>	
+					<Desc>Sets the alignment of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleFont</Name>
+					<Type>Font</Type>	
+					<Desc>Sets the title font properties of an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the text color of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>ToolTip</Name>
+					<Type>Text</Type>	
+					<Desc>Sets the tooltip used for the axis.</Desc>
+				</Property>					
+			</Properties>
+			   <SubSections>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.MajorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.MajorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.MinorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.MinorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.LabelStyle</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisY2.ScaleBreakStyle</Name>
+				</SubSection>				
+			  </SubSections>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.LabelStyle</Name>
+			<Properties>
+				<Property>
+					<Name>Angle</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>Sets a value that represents the angle at which the font is drawn.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets a flag that indicates whether the label is enabled.</Desc>
+				</Property>
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>
+					<Desc>Sets the font of the label.</Desc>
+				</Property>
+				<Property>
+					<Name>ForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of the label.</Desc>
+				</Property>	
+				<Property>
+					<Name>Format</Name>
+					<Type>Enum:NumberFormat</Type>	
+					<Desc>Sets the format. Used for values. Select from the list to show values in the thousands or millions, or type a custom format to use.</Desc>
+				</Property>				
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the unit of measurement of the label interval offset. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets the unit of measurement of the label interval. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsEndLabelVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether the labels are shown at axis ends.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStaggered</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels are shown with an offset.</Desc>
+				</Property>	
+				<Property>
+					<Name>TruncatedLabels</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels can be truncated. Dynamics 365 will often override this setting and truncate anyway.</Desc>
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.MajorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.MajorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.MinorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.MinorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisY2.ScaleBreakStyle</Name>
+			<Properties>
+				<Property>
+					<Name>BreakLineStyle</Name>
+					<Type>Enum:BreakLineStyle</Type>	
+					<Desc>The style of the break line that will be used to draw the scale break.</Desc>
+				</Property>			
+				<Property>
+					<Name>CollapsibleSpaceThreshold</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>The CollapsibleSpaceThreshold property is a percentage of the Y axis. The default value for 25 means that the data in your series must have a difference of at least 25% for the ScaleBreak to appear. Value range 10-90, Default ="25"</Desc>					
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc>Is the ScaleBreak enabled. Must be set to "True" for other scale break properties to take effect.</Desc>
+					</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>					
+					<Desc>The color of the scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the scale break line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>					
+					<Desc>The width of hte scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>MaxNumberOfBreaks</Name>
+					<Type>Number:{Min=0,Max=5,DecimalPlaces=0,Increment=1}</Type>			
+					<Desc>Max number of breaks supported. Value range 0-5, default ="2"</Desc>					
+				</Property>	
+				<Property>
+					<Name>Spacing</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>Value represent the gap of the break as percentage of the axis. Value range 0-10, default ="1.5" percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>StartFromZero</Name>
+					<Type>Enum:StartFromZero</Type>					
+					<Desc>Defines if the chart should start looking for possible scale breaks from either zero, or from the lowest value in your data set. Default ="Auto"</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2</Name>
+			<Properties>
+				<Property>
+					<Name>ArrowStyle</Name>
+					<Type>Enum:AxisArrowStyle</Type>
+					<Desc>Sets the arrow style of a two-dimensional (2D) axis; this style is not applied to three-dimensional (3D) chart areas.</Desc>
+				</Property>
+				<Property>
+					<Name>Crossing</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value at which an axis is crossed by its associated axis. I.e. can change the center point of the axis and bars/columns can move in either direction. Consider setting IsMarksNextToAxis to "False" if used.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Enabled by default. If "False", the axis and title is removed entirely, but bars/columns and series will remain.</Desc>
+				</Property>
+				<Property>
+					<Name>InterlacedColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of interlaced strip lines. Colors the interval between the major gridlines. Only applies if IsInterlaced="True"</Desc>
+				</Property>	
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=99999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the interval of an axis. The Interval property of a major tick mark, grid line or label of the axis has priority over the Interval property setting of the Axis object.</Desc>
+				</Property>				
+				<Property>
+					<Name>IntervalAutoMode</Name>
+					<Type>Enum:FixedVariable</Type>	
+					<Desc>Determines if a fixed number of intervals is used on the axis, or if the number of intervals depends on the axis size.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the interval offset of an axis. I.e. the value 100 would mean the labels on the axis start at the value 100.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsInterlaced</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines if interlaced strip lines are displayed for an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLabelAutoFit</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether axis labels are automatically fitted.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsLogarithmic</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Indicates whether the axis is logarithmic. Zeros or negative data values are not allowed on logarithmic charts. Optionally use LogarithmBase in conjunction with this property.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarginVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether an axis margin will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsMarksNextToAxis</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether tick marks and axis labels move with an axis if the crossing point of an axis changes. Set to "False" if crossing is used or chart includes both positive and negative values.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsReversed</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Reverses the orientation of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStartedFromZero</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Use to highligth subtle differences in datasets that have large amounts. Indicates if the minimum value of the axis will be automatically set to zero if all data point values are positive. If there are negative data point values, the minimum value of the data points will be used.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMaxFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The maximum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>	
+				<Property>
+					<Name>LabelAutoFitMinFontSize</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>The minimum font size that can be used by the label auto-fitting algorithm.</Desc>
+				</Property>		
+				<Property>
+					<Name>LabelAutoFitStyle</Name>
+					<Type>Enum:LabelAutoFitStyle</Type>	
+					<Desc>Sets the allowable label changes that can be made to enable the label to be fit along an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the line color of the axis.</Desc>
+				</Property>					
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>	
+					<Desc>Sets the dash style of the line of the axis.</Desc>
+				</Property>
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the axis in pixels.</Desc>
+				</Property>	
+				<Property>
+					<Name>LogarithmBase</Name>
+					<Type>Number:{Min=99999999999,Max=9999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Value that represents the logarithm base value for the logarithmic axis. The default value is base 10.</Desc>
+				</Property>				
+				<Property>
+					<Name>Maximum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the maximum value of an axis. I.e. if charting a scale that goes from 0-100, set the max to 100 to avoid the chart being longer than the actual values.</Desc>
+				</Property>	
+				<Property>
+					<Name>Minimum</Name>
+					<Type>Number:{Min=-99999999999999999,Max=9999999999999999999,DecimalPlaces=2,Increment=1}</Type>		
+					<Desc>Sets the minimum value of an axis.</Desc>
+				</Property>		
+				<Property>
+					<Name>MaximumAutoSize</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>Sets the maximum size of the axis, measured as a percentage of the chart area. This value is used by the automatic layout algorithm.</Desc>
+				</Property>			
+				<Property>
+					<Name>Title</Name>
+					<Type>Text</Type>
+					<Desc>Sets the title of the axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleAlignment</Name>
+					<Type>Enum:StringAlignment</Type>	
+					<Desc>Sets the alignment of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleFont</Name>
+					<Type>Font</Type>	
+					<Desc>Sets the title font properties of an axis.</Desc>
+				</Property>	
+				<Property>
+					<Name>TitleForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the text color of an axis title.</Desc>
+				</Property>	
+				<Property>
+					<Name>ToolTip</Name>
+					<Type>Text</Type>	
+					<Desc>Sets the tooltip used for the axis.</Desc>
+				</Property>					
+			</Properties>
+			   <SubSections>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.MajorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.MajorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.MinorGrid</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.MinorTickMark</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.LabelStyle</Name>
+				</SubSection>
+				<SubSection>
+				  <Name>ChartAreas.ChartArea.AxisX2.ScaleBreakStyle</Name>
+				</SubSection>				
+			  </SubSections>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.LabelStyle</Name>
+			<Properties>
+				<Property>
+					<Name>Angle</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>	
+					<Desc>Sets a value that represents the angle at which the font is drawn.</Desc>
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets a flag that indicates whether the label is enabled.</Desc>
+				</Property>
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>
+					<Desc>Sets the font of the label.</Desc>
+				</Property>
+				<Property>
+					<Name>ForeColor</Name>
+					<Type>Color</Type>	
+					<Desc>Sets the color of the label.</Desc>
+				</Property>	
+				<Property>
+					<Name>Format</Name>
+					<Type>Enum:NumberFormat</Type>	
+					<Desc>Sets the format. Used for values. Select from the list to show values in the thousands or millions, or type a custom format to use.</Desc>
+				</Property>				
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the unit of measurement of the label interval offset. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Sets the unit of measurement of the label interval. Intended for dates, but Dynamics 365 haven't rendered this properly since Dynamics CRM 2011.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsEndLabelVisible</Name>
+					<Type>Enum:Boolean</Type>	
+					<Desc>Determines whether the labels are shown at axis ends.</Desc>
+				</Property>	
+				<Property>
+					<Name>IsStaggered</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels are shown with an offset.</Desc>
+				</Property>	
+				<Property>
+					<Name>TruncatedLabels</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether the labels can be truncated. Dynamics 365 will often override this setting and truncate anyway.</Desc>
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.MajorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>			
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.MajorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.MinorGrid</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>			
+			</Properties>
+		</Section>		
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.MinorTickMark</Name>
+			<Properties>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>
+					<Desc>Determines whether major or minor grid lines are enabled.</Desc>
+				</Property>			
+				<Property>
+					<Name>Interval</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the value of the label interval. Only for the labels. The interval for the grid is defined on the axis directly.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffset</Name>
+					<Type>Number:{Min=0,Max=9999999999999999,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Value to offset of the label interval.</Desc>
+				</Property>
+				<Property>
+					<Name>IntervalOffsetType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval offset type the grid lines. Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>
+				</Property>	
+				<Property>
+					<Name>IntervalType</Name>
+					<Type>Enum:DateTimeIntervalType</Type>	
+					<Desc>Sets the interval type for the grid lines.Intended for dates although Dyn365 doesn't seem to support these on intervals.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>	
+					<Desc>The color of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the grid line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>		
+					<Desc>The width of the grid line in pixels.</Desc>					
+				</Property>	
+				<Property>
+					<Name>Size</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the length of tick marks. The length is measured in units that represent a percentage of the height or width of the chart image, depending on the axis. Default value is 1.0 percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>TickMarkStyle</Name>
+					<Type>Enum:TickMarkStyle</Type>	
+					<Desc>Sets the tick mark style. Default value is "OutsideArea".</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>ChartAreas.ChartArea.AxisX2.ScaleBreakStyle</Name>
+			<Properties>
+				<Property>
+					<Name>BreakLineStyle</Name>
+					<Type>Enum:BreakLineStyle</Type>	
+					<Desc>The style of the break line that will be used to draw the scale break.</Desc>
+				</Property>			
+				<Property>
+					<Name>CollapsibleSpaceThreshold</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>The CollapsibleSpaceThreshold property is a percentage of the Y axis. The default value for 25 means that the data in your series must have a difference of at least 25% for the ScaleBreak to appear. Value range 10-90, Default ="25"</Desc>					
+				</Property>
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc>Is the ScaleBreak enabled. Must be set to "True" for other scale break properties to take effect.</Desc>
+					</Property>	
+				<Property>
+					<Name>LineColor</Name>
+					<Type>Color</Type>					
+					<Desc>The color of the scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>LineDashStyle</Name>
+					<Type>Enum:DashStyle</Type>		
+					<Desc>The dash style of the scale break line.</Desc>					
+				</Property>	
+				<Property>
+					<Name>LineWidth</Name>
+					<Type>Number:{Min=0,Max=1000,DecimalPlaces=0,Increment=1}</Type>					
+					<Desc>The width of hte scale break line.</Desc>
+				</Property>	
+				<Property>
+					<Name>MaxNumberOfBreaks</Name>
+					<Type>Number:{Min=0,Max=5,DecimalPlaces=0,Increment=1}</Type>			
+					<Desc>Max number of breaks supported. Value range 0-5, default ="2"</Desc>					
+				</Property>	
+				<Property>
+					<Name>Spacing</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>Value represent the gap of the break as percentage of the axis. Value range 0-10, default ="1.5" percent.</Desc>
+				</Property>	
+				<Property>
+					<Name>StartFromZero</Name>
+					<Type>Enum:StartFromZero</Type>					
+					<Desc>Defines if the chart should start looking for possible scale breaks from either zero, or from the lowest value in your data set. Default ="Auto"</Desc>
+				</Property>					
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Legends</Name>
+			  <SubSections>
+				<SubSection>
+				  <Name>Legends.Legend</Name>
+				</SubSection>
+			  </SubSections>
+		</Section>		
+		<Section>
+			<Name>Legends.Legend</Name>
+			<Properties>
+				<Property>
+					<Name>LegendItemOrder</Name>
+					<Type>Enum:LegendItemOrder</Type>	
+					<Desc>Specifies the order of the legend items. Use "ReversedSeriesOrder" on bar charts where the order is already displayed in reverse.</Desc>
+				</Property>			
+				<Property>
+					<Name>Title</Name>
+					<Type>Text</Type>					
+					<Desc></Desc>
+				</Property>
+				<Property>
+					<Name>TitleFont</Name>
+					<Type>Font</Type>					
+					<Desc></Desc>
+				</Property>	
+				<Property>
+					<Name>TitleForeColor</Name>
+					<Type>Color</Type>					
+					<Desc></Desc>
+				</Property>	
+				<Property>
+					<Name>TitleSeparator</Name>
+					<Type>Enum:LegendSeparatorStyle</Type>					
+					<Desc></Desc>
+				</Property>	
+				<Property>
+					<Name>TitleSeparatorColor</Name>
+					<Type>Color</Type>					
+					<Desc></Desc>
+				</Property>	
+				<Property>
+					<Name>TitleAlignment</Name>
+					<Type>Enum:StringAlignment</Type>					
+					<Desc></Desc>
+				</Property>	
+				<Property>
+					<Name>Enabled</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc>Can disable the Legend if showing it is not needed. Will give more space to the chart area.</Desc>
+				</Property>
+				<Property>
+					<Name>Alignment</Name>
+					<Type>Enum:StringAlignment</Type>					
+					<Desc></Desc>
+				</Property>				
+				<Property>
+					<Name>Docking</Name>
+					<Type>Enum:Docking</Type>					
+					<Desc></Desc>
+				</Property>
+				<Property>
+					<Name>IsEquallySpacedItems</Name>
+					<Type>Enum:Boolean</Type>					
+					<Desc></Desc>
+				</Property>
+				<Property>
+					<Name>LegendStyle</Name>
+					<Type>Enum:LegendStyle</Type>					
+					<Desc></Desc>
+				</Property>
+				<Property>
+					<Name>ItemColumnSpacing</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>					
+					<Desc>The ItemColumnSpacing property value is calculated as a percentage of the legend text font.</Desc>
+				</Property>			
+			</Properties>
+		</Section>	
+		<Section>
+			<Name>Annotations.TextAnnotation</Name>
+			<Properties>
+				<Property>
+					<Name>X</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the X coordinate of an annotation. Value range 0-100.</Desc>
+				</Property>			
+				<Property>
+					<Name>Y</Name>
+					<Type>Number:{Min=0,Max=100,DecimalPlaces=2,Increment=1}</Type>	
+					<Desc>Sets the Y coordinate of an annotation. Value range 0-100</Desc>
+				</Property>
+				<Property>
+					<Name>Text</Name>
+					<Type>Text</Type>					
+					<Desc>The text displayed in the annotation.</Desc>
+				</Property>	
+				<Property>
+					<Name>TextStyle</Name>
+					<Type>Enum:TextStyle</Type>					
+					<Desc>Style of text for the annotation.</Desc>
+				</Property>	
+				<Property>
+					<Name>Font</Name>
+					<Type>Font</Type>					
+					<Desc>Type of font used.</Desc>
+				</Property>	
+				<Property>
+					<Name>ForeColor</Name>
+					<Type>Color</Type>					
+					<Desc>The color of text.</Desc>
+				</Property>	
+				<Property>
+					<Name>ToolTip</Name>
+					<Type>Text</Type>					
+					<Desc>Text for the tooltip shown when hovering over the annotation.</Desc>
+				</Property>					
+			</Properties>
+		</Section>			
+	</Sections>
+	<CustomEnums>
+		<CustomEnum>
+			<Name>Boolean</Name>
+			<EnumItems>
+				<EnumItem>
+					<Name>True</Name>
+				</EnumItem>
+				<EnumItem>
+					<Name>False</Name>
+				</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>AxisType</Name>
+			<EnumItems>
+				<EnumItem>
+					<Name>Primary</Name>
+				</EnumItem>
+				<EnumItem>
+					<Name>Secondary</Name>
+				</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>		
+			<Name>LegendStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Column</Name>	</EnumItem>
+				<EnumItem>	<Name>Row</Name>	</EnumItem>
+				<EnumItem>	<Name>Table</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>	
+		<CustomEnum>	
+			<Name>Docking</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Bottom</Name>	</EnumItem>
+				<EnumItem>	<Name>Left</Name>	</EnumItem>
+				<EnumItem>	<Name>Right</Name>	</EnumItem>
+				<EnumItem>	<Name>Top</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>			
+		<CustomEnum>
+			<Name>GradientStyle</Name>
+			<EnumItems>
+				<EnumItem>	<Name>Center</Name>	</EnumItem>
+				<EnumItem>	<Name>DiagonalLeft</Name>	</EnumItem>
+				<EnumItem>	<Name>DiagonalRight</Name>	</EnumItem>
+				<EnumItem>	<Name>HorizontalCenter</Name>	</EnumItem>
+				<EnumItem>	<Name>LeftRight</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>TopBottom</Name>	</EnumItem>
+				<EnumItem>	<Name>VerticalCenter</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>ChartHatchStyle</Name>
+			<EnumItems>
+				<EnumItem>	<Name>BackwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>Cross</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkDownwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkHorizontal</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkUpwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkVertical</Name>	</EnumItem>
+				<EnumItem>	<Name>DashedDownwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>DashedHorizontal</Name>	</EnumItem>
+				<EnumItem>	<Name>DashedUpwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>DashedVertical</Name>	</EnumItem>
+				<EnumItem>	<Name>DiagonalBrick</Name>	</EnumItem>
+				<EnumItem>	<Name>DiagonalCross</Name>	</EnumItem>
+				<EnumItem>	<Name>Divot</Name>	</EnumItem>
+				<EnumItem>	<Name>DottedDiamond</Name>	</EnumItem>
+				<EnumItem>	<Name>DottedGrid</Name>	</EnumItem>
+				<EnumItem>	<Name>ForwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>Horizontal</Name>	</EnumItem>
+				<EnumItem>	<Name>HorizontalBrick</Name>	</EnumItem>
+				<EnumItem>	<Name>LargeCheckerBoard</Name>	</EnumItem>
+				<EnumItem>	<Name>LargeConfetti</Name>	</EnumItem>
+				<EnumItem>	<Name>LargeGrid</Name>	</EnumItem>
+				<EnumItem>	<Name>LightDownwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>LightHorizontal</Name>	</EnumItem>
+				<EnumItem>	<Name>LightUpwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>LightVertical</Name>	</EnumItem>
+				<EnumItem>	<Name>NarrowHorizontal</Name>	</EnumItem>
+				<EnumItem>	<Name>NarrowVertical</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>OutlinedDiamond</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent05</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent10</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent20</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent25</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent30</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent40</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent50</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent60</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent70</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent75</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent80</Name>	</EnumItem>
+				<EnumItem>	<Name>Percent90</Name>	</EnumItem>
+				<EnumItem>	<Name>Plaid</Name>	</EnumItem>
+				<EnumItem>	<Name>Shingle</Name>	</EnumItem>
+				<EnumItem>	<Name>SmallCheckerBoard</Name>	</EnumItem>
+				<EnumItem>	<Name>SmallConfetti</Name>	</EnumItem>
+				<EnumItem>	<Name>SmallGrid</Name>	</EnumItem>
+				<EnumItem>	<Name>SolidDiamond</Name>	</EnumItem>
+				<EnumItem>	<Name>Sphere</Name>	</EnumItem>
+				<EnumItem>	<Name>Trellis</Name>	</EnumItem>
+				<EnumItem>	<Name>Vertical</Name>	</EnumItem>
+				<EnumItem>	<Name>Wave</Name>	</EnumItem>
+				<EnumItem>	<Name>Weave</Name>	</EnumItem>
+				<EnumItem>	<Name>WideDownwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>WideUpwardDiagonal</Name>	</EnumItem>
+				<EnumItem>	<Name>ZigZag</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>ChartType</Name>
+			<EnumItems>
+				<EnumItem>	<Name>Area</Name>	</EnumItem>
+				<EnumItem>	<Name>Bar</Name>	</EnumItem>
+				<EnumItem>	<Name>BoxPlot</Name>	</EnumItem>
+				<EnumItem>	<Name>Bubble</Name>	</EnumItem>
+				<EnumItem>	<Name>Candlestick</Name>	</EnumItem>
+				<EnumItem>	<Name>Column</Name>	</EnumItem>
+				<EnumItem>	<Name>doughnut</Name>	</EnumItem>
+				<EnumItem>	<Name>ErrorBar</Name>	</EnumItem>
+				<EnumItem>	<Name>FastLine</Name>	</EnumItem>
+				<EnumItem>	<Name>FastPoint</Name>	</EnumItem>
+				<EnumItem>	<Name>Funnel</Name>	</EnumItem>
+				<EnumItem>	<Name>Kagi</Name>	</EnumItem>
+				<EnumItem>	<Name>Line</Name>	</EnumItem>
+				<EnumItem>	<Name>Pie</Name>	</EnumItem>
+				<EnumItem>	<Name>Point</Name>	</EnumItem>
+				<EnumItem>	<Name>PointAndFigure</Name>	</EnumItem>
+				<EnumItem>	<Name>Polar</Name>	</EnumItem>
+				<EnumItem>	<Name>Pyramid</Name>	</EnumItem>
+				<EnumItem>	<Name>Radar</Name>	</EnumItem>
+				<EnumItem>	<Name>Range</Name>	</EnumItem>
+				<EnumItem>	<Name>RangeBar</Name>	</EnumItem>
+				<EnumItem>	<Name>RangeColumn</Name>	</EnumItem>
+				<EnumItem>	<Name>Renko</Name>	</EnumItem>
+				<EnumItem>	<Name>Spline</Name>	</EnumItem>
+				<EnumItem>	<Name>SplineArea</Name>	</EnumItem>
+				<EnumItem>	<Name>SplineRange</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedArea</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedArea100</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedBar</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedBar100</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedColumn</Name>	</EnumItem>
+				<EnumItem>	<Name>StackedColumn100</Name>	</EnumItem>
+				<EnumItem>	<Name>StepLine</Name>	</EnumItem>
+				<EnumItem>	<Name>Stock</Name>	</EnumItem>
+				<EnumItem>	<Name>ThreeLineBreak</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>DashStyle</Name>
+			<EnumItems>
+				<EnumItem>	<Name>Dash</Name>	</EnumItem>
+				<EnumItem>	<Name>DashDot</Name>	</EnumItem>
+				<EnumItem>	<Name>DashDotDot</Name>	</EnumItem>
+				<EnumItem>	<Name>Dot</Name>	</EnumItem>
+				<EnumItem>	<Name>NotSet</Name>	</EnumItem>
+				<EnumItem>	<Name>Solid</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>		
+		<CustomEnum>
+			<Name>Palettes</Name>
+			<EnumItems>
+				<EnumItem>	<Name>Berry</Name>	</EnumItem>
+				<EnumItem>	<Name>Bright</Name>	</EnumItem>
+				<EnumItem>	<Name>BrightPastel</Name>	</EnumItem>
+				<EnumItem>	<Name>Chocolate</Name>	</EnumItem>
+				<EnumItem>	<Name>EarthTones</Name>	</EnumItem>
+				<EnumItem>	<Name>Excel</Name>	</EnumItem>
+				<EnumItem>	<Name>Fire</Name>	</EnumItem>
+				<EnumItem>	<Name>Grayscale</Name>	</EnumItem>
+				<EnumItem>	<Name>Light</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>Pastel</Name>	</EnumItem>
+				<EnumItem>	<Name>SeaGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>SemiTransparent</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>Font</Name>
+			<EnumItems>
+				<EnumItem>	<Name>Arial</Name>	</EnumItem>
+				<EnumItem>	<Name>Arial Black</Name>	</EnumItem>
+				<EnumItem>	<Name>Comic Sans MS</Name>	</EnumItem>
+				<EnumItem>	<Name>Courier New</Name>	</EnumItem>
+				<EnumItem>	<Name>Georgia</Name>	</EnumItem>
+				<EnumItem>	<Name>Impact</Name>	</EnumItem>
+				<EnumItem>	<Name>Lucida Console</Name>	</EnumItem>
+				<EnumItem>	<Name>Lucida Sans Unicode</Name>	</EnumItem>
+				<EnumItem>	<Name>Palatino Linotype</Name>	</EnumItem>
+				<EnumItem>	<Name>Tahoma</Name>	</EnumItem>
+				<EnumItem>	<Name>Times New Roman</Name>	</EnumItem>
+				<EnumItem>	<Name>Trebuchet</Name>	</EnumItem>
+				<EnumItem>	<Name>Verdana</Name>	</EnumItem>
+				<EnumItem>	<Name>Symbol</Name>	</EnumItem>
+				<EnumItem>	<Name>Webdings</Name>	</EnumItem>
+				<EnumItem>	<Name>Wingdings</Name>	</EnumItem>
+				<EnumItem>	<Name>MS Sans Serif</Name>	</EnumItem>
+				<EnumItem>	<Name>MS Serif</Name>	</EnumItem>
+				<EnumItem>	<Name>{0}</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>		
+		<CustomEnum>		
+			<Name>MarkerStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Circle</Name>	</EnumItem>
+				<EnumItem>	<Name>Cross</Name>	</EnumItem>
+				<EnumItem>	<Name>Diamond</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>Square</Name>	</EnumItem>
+				<EnumItem>	<Name>Star10</Name>	</EnumItem>
+				<EnumItem>	<Name>Star4</Name>	</EnumItem>
+				<EnumItem>	<Name>Star5</Name>	</EnumItem>
+				<EnumItem>	<Name>Star6</Name>	</EnumItem>
+				<EnumItem>	<Name>Triangle</Name>	</EnumItem>
+			</EnumItems>
+		</CustomEnum>
+		<CustomEnum>			
+			<Name>AxisArrowStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Lines</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>SharpTriangle</Name>	</EnumItem>
+				<EnumItem>	<Name>Triangle</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		
+		<CustomEnum>		
+			<Name>DateTimeIntervalType</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Auto</Name>	</EnumItem>
+				<EnumItem>	<Name>Days</Name>	</EnumItem>
+				<EnumItem>	<Name>Hours</Name>	</EnumItem>
+				<EnumItem>	<Name>Milliseconds</Name>	</EnumItem>
+				<EnumItem>	<Name>Minutes</Name>	</EnumItem>
+				<EnumItem>	<Name>Months</Name>	</EnumItem>
+				<EnumItem>	<Name>NotSet</Name>	</EnumItem>
+				<EnumItem>	<Name>Number</Name>	</EnumItem>
+				<EnumItem>	<Name>Seconds</Name>	</EnumItem>
+				<EnumItem>	<Name>Weeks</Name>	</EnumItem>
+				<EnumItem>	<Name>Years</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>		
+		
+		<CustomEnum>		
+			<Name>TickMarkStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>AcrossAxis</Name>	</EnumItem>
+				<EnumItem>	<Name>InsideArea</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>OutsideArea</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>		
+		<CustomEnum>			
+			<Name>BreakLineStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>Ragged</Name>	</EnumItem>
+				<EnumItem>	<Name>Straight</Name>	</EnumItem>
+				<EnumItem>	<Name>Wave</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>StringAlignment</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Center</Name>	</EnumItem>
+				<EnumItem>	<Name>Far</Name>	</EnumItem>
+				<EnumItem>	<Name>Near</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>LegendSeparatorStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>DashLine</Name>	</EnumItem>
+				<EnumItem>	<Name>DotLine</Name>	</EnumItem>
+				<EnumItem>	<Name>DoubleLine</Name>	</EnumItem>
+				<EnumItem>	<Name>GradientLine</Name>	</EnumItem>
+				<EnumItem>	<Name>Line</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>ThickGradientLine</Name>	</EnumItem>
+				<EnumItem>	<Name>ThickLine</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>LegendItemOrder</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Auto</Name>	</EnumItem>
+				<EnumItem>	<Name>ReversedSeriesOrder</Name>	</EnumItem>
+				<EnumItem>	<Name>SameAsSeriesOrder</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>TextStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Default</Name>	</EnumItem>
+				<EnumItem>	<Name>Embed</Name>	</EnumItem>
+				<EnumItem>	<Name>Emboss</Name>	</EnumItem>
+				<EnumItem>	<Name>Frame</Name>	</EnumItem>
+				<EnumItem>	<Name>Shadow</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>LabelStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Auto</Name>	</EnumItem>
+				<EnumItem>	<Name>Top</Name>	</EnumItem>
+				<EnumItem>	<Name>Bottom</Name>	</EnumItem>
+				<EnumItem>	<Name>Right</Name>	</EnumItem>
+				<EnumItem>	<Name>Left</Name>	</EnumItem>
+				<EnumItem>	<Name>TopLeft</Name>	</EnumItem>
+				<EnumItem>	<Name>TopRight</Name>	</EnumItem>
+				<EnumItem>	<Name>BottomLeft</Name>	</EnumItem>
+				<EnumItem>	<Name>BottomRight</Name>	</EnumItem>
+				<EnumItem>	<Name>Center</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>LabelAutoFitStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>DecreaseFont</Name>	</EnumItem>
+				<EnumItem>	<Name>IncreaseFont</Name>	</EnumItem>
+				<EnumItem>	<Name>LabelsAngleStep30</Name>	</EnumItem>
+				<EnumItem>	<Name>LabelsAngleStep45</Name>	</EnumItem>
+				<EnumItem>	<Name>LabelsAngleStep90</Name>	</EnumItem>
+				<EnumItem>	<Name>None</Name>	</EnumItem>
+				<EnumItem>	<Name>StaggeredLabels</Name>	</EnumItem>
+				<EnumItem>	<Name>WordWrap</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>		
+		<CustomEnum>	
+			<Name>BarLabelStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Outside</Name>	</EnumItem>
+				<EnumItem>	<Name>Left</Name>	</EnumItem>
+				<EnumItem>	<Name>Right</Name>	</EnumItem>
+				<EnumItem>	<Name>Center</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>DrawingStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Cylinder</Name>	</EnumItem>
+				<EnumItem>	<Name>Emboss</Name>	</EnumItem>
+				<EnumItem>	<Name>LightToDark</Name>	</EnumItem>
+				<EnumItem>	<Name>Wedge</Name>	</EnumItem>
+				<EnumItem>	<Name>Default</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>PieDrawingStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Default</Name>	</EnumItem>
+				<EnumItem>	<Name>SoftEdge</Name>	</EnumItem>
+				<EnumItem>	<Name>Concave</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>PieLabelStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Inside</Name>	</EnumItem>
+				<EnumItem>	<Name>Outside</Name>	</EnumItem>
+				<EnumItem>	<Name>Disabled</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>FunnelInsideLabelAlignment</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Center</Name>	</EnumItem>
+				<EnumItem>	<Name>Top</Name>	</EnumItem>
+				<EnumItem>	<Name>Bottom</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>FunnelLabelStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Inside</Name>	</EnumItem>
+				<EnumItem>	<Name>Outside</Name>	</EnumItem>
+				<EnumItem>	<Name>OutsideInColumn</Name>	</EnumItem>
+				<EnumItem>	<Name>Disabled</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>FunnelOutsideLabelPlacement</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Right</Name>	</EnumItem>
+				<EnumItem>	<Name>Left</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>FunnelStyle</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>YIsHeight</Name>	</EnumItem>
+				<EnumItem>	<Name>YIsWidth</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>FixedVariable</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>FixedCount</Name>	</EnumItem>
+				<EnumItem>	<Name>VariableCount</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>
+		<CustomEnum>	
+			<Name>EmptyPointValue</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Average</Name>	</EnumItem>
+				<EnumItem>	<Name>Zero</Name>	</EnumItem>
+			</EnumItems>			
+		</CustomEnum>		
+		<CustomEnum>	
+			<Name>StartFromZero</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>Auto</Name>	</EnumItem>
+				<EnumItem>	<Name>Yes</Name>	</EnumItem>
+				<EnumItem>	<Name>No</Name>	</EnumItem>				
+			</EnumItems>			
+		</CustomEnum>		
+		<CustomEnum>	
+			<Name>NumberFormat</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>#,0</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,.##K</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,,.##M</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,,,.##B</Name>	</EnumItem>
+				<EnumItem>	<Name>C</Name>	</EnumItem>
+				<EnumItem>	<Name>C0</Name>	</EnumItem>
+				<EnumItem>	<Name>C2</Name>	</EnumItem>
+				<EnumItem>	<Name>F0</Name>	</EnumItem>			
+				<EnumItem>	<Name>#,0;(#,0);' '</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,.##K;(#,0,.##K);' '</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,,.##M;(#,0,,.##M);' '</Name>	</EnumItem>
+				<EnumItem>	<Name>#,0,,,.##B;(#,0,,,.##B);' '</Name>	</EnumItem>				
+			</EnumItems>			
+		</CustomEnum>	
+		<CustomEnum>	
+			<Name>PaletteCustomColors</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>91,151,213; 237,125,49; 160,116,166; 255,192,0; 68,114,196; 112,173,71; 37,94,145; 158,72,14; 117,55,125; 153,115,0; 38,68,120; 67,104,43; 124,175,221; 241,151,90; 186,144,192; 255,205,51; 105,142,208; 140,193,104; 50,125,194; 210,96,18; 150,83,159; 204,154,0; 51,90,161; 90,138,57;</Name>	</EnumItem>
+				<EnumItem>	<Name>1,184,170; 55,70,73; 253,98,94; 242,200,15; 95,107,109; 138,212,235; 254,150,153; 53,153,184; 223,191,191; 74,197,187; 95,107,109; 251,130,129; 244,210,90; 127,137,138; 164,221,238; 253,171,137; 182,135,172; 40,115,138; 167,143,143; 22,137,128; 41,53,55; 187,74,74; 181,149,37; 71,80,81;</Name>	</EnumItem>
+				<EnumItem>	<Name>59,121,183; 153,235,237; 0,206,211; 0,183,195; 219,57,35; 226,97,79;244,192,185;</Name>	</EnumItem>
+				</EnumItems>
+		</CustomEnum>
+		<CustomEnum>
+			<Name>NamedColors</Name>		
+			<EnumItems>		
+				<EnumItem>	<Name>LightPink</Name>	</EnumItem>
+				<EnumItem>	<Name>Pink</Name>	</EnumItem>
+				<EnumItem>	<Name>Crimson</Name>	</EnumItem>
+				<EnumItem>	<Name>LavenderBlush</Name>	</EnumItem>
+				<EnumItem>	<Name>PaleVioletRed</Name>	</EnumItem>
+				<EnumItem>	<Name>HotPink</Name>	</EnumItem>
+				<EnumItem>	<Name>DeepPink</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumVioletRed</Name>	</EnumItem>
+				<EnumItem>	<Name>Orchid</Name>	</EnumItem>
+				<EnumItem>	<Name>Thistle</Name>	</EnumItem>
+				<EnumItem>	<Name>Plum</Name>	</EnumItem>
+				<EnumItem>	<Name>Violet</Name>	</EnumItem>
+				<EnumItem>	<Name>Magenta</Name>	</EnumItem>
+				<EnumItem>	<Name>Fuchsia</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkMagenta</Name>	</EnumItem>
+				<EnumItem>	<Name>Purple</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumOrchid</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkViolet</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkOrchid</Name>	</EnumItem>
+				<EnumItem>	<Name>Indigo</Name>	</EnumItem>
+				<EnumItem>	<Name>BlueViolet</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumPurple</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumSlateBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>SlateBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkSlateBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>Lavender</Name>	</EnumItem>
+				<EnumItem>	<Name>GhostWhite</Name>	</EnumItem>
+				<EnumItem>	<Name>Blue</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>MidnightBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>Navy</Name>	</EnumItem>
+				<EnumItem>	<Name>RoyalBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>CornflowerBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>LightSteelBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>LightSlateGray / LightSlateGrey†</Name>	</EnumItem>
+				<EnumItem>	<Name>SlateGray / SlateGrey†</Name>	</EnumItem>
+				<EnumItem>	<Name>DodgerBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>AliceBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>SteelBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>LightSkyBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>SkyBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>DeepSkyBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>LightBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>PowderBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>CadetBlue</Name>	</EnumItem>
+				<EnumItem>	<Name>Azure</Name>	</EnumItem>
+				<EnumItem>	<Name>LightCyan</Name>	</EnumItem>
+				<EnumItem>	<Name>PaleTurquoise</Name>	</EnumItem>
+				<EnumItem>	<Name>Cyan</Name>	</EnumItem>
+				<EnumItem>	<Name>Aqua</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkTurquoise</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkSlateGray / DarkSlateGrey†</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkCyan</Name>	</EnumItem>
+				<EnumItem>	<Name>Teal</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumTurquoise</Name>	</EnumItem>
+				<EnumItem>	<Name>LightSeaGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>Turquoise</Name>	</EnumItem>
+				<EnumItem>	<Name>Aquamarine</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumAquamarine</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumSpringGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>MintCream</Name>	</EnumItem>
+				<EnumItem>	<Name>SpringGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>MediumSeaGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>SeaGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>Honeydew</Name>	</EnumItem>
+				<EnumItem>	<Name>LightGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>PaleGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkSeaGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>LimeGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>Lime</Name>	</EnumItem>
+				<EnumItem>	<Name>ForestGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>Green</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>Chartreuse</Name>	</EnumItem>
+				<EnumItem>	<Name>LawnGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>GreenYellow</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkOliveGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>YellowGreen</Name>	</EnumItem>
+				<EnumItem>	<Name>OliveDrab</Name>	</EnumItem>
+				<EnumItem>	<Name>Beige</Name>	</EnumItem>
+				<EnumItem>	<Name>LightGoldenrodYellow</Name>	</EnumItem>
+				<EnumItem>	<Name>Ivory</Name>	</EnumItem>
+				<EnumItem>	<Name>LightYellow</Name>	</EnumItem>
+				<EnumItem>	<Name>Yellow</Name>	</EnumItem>
+				<EnumItem>	<Name>Olive</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkKhaki</Name>	</EnumItem>
+				<EnumItem>	<Name>LemonChiffon</Name>	</EnumItem>
+				<EnumItem>	<Name>PaleGoldenrod</Name>	</EnumItem>
+				<EnumItem>	<Name>Khaki</Name>	</EnumItem>
+				<EnumItem>	<Name>Gold</Name>	</EnumItem>
+				<EnumItem>	<Name>Cornsilk</Name>	</EnumItem>
+				<EnumItem>	<Name>Goldenrod</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkGoldenrod</Name>	</EnumItem>
+				<EnumItem>	<Name>FloralWhite</Name>	</EnumItem>
+				<EnumItem>	<Name>OldLace</Name>	</EnumItem>
+				<EnumItem>	<Name>Wheat</Name>	</EnumItem>
+				<EnumItem>	<Name>Moccasin</Name>	</EnumItem>
+				<EnumItem>	<Name>Orange</Name>	</EnumItem>
+				<EnumItem>	<Name>PapayaWhip</Name>	</EnumItem>
+				<EnumItem>	<Name>BlanchedAlmond</Name>	</EnumItem>
+				<EnumItem>	<Name>NavajoWhite</Name>	</EnumItem>
+				<EnumItem>	<Name>AntiqueWhite</Name>	</EnumItem>
+				<EnumItem>	<Name>Tan</Name>	</EnumItem>
+				<EnumItem>	<Name>BurlyWood</Name>	</EnumItem>
+				<EnumItem>	<Name>Bisque</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkOrange</Name>	</EnumItem>
+				<EnumItem>	<Name>Linen</Name>	</EnumItem>
+				<EnumItem>	<Name>Peru</Name>	</EnumItem>
+				<EnumItem>	<Name>PeachPuff</Name>	</EnumItem>
+				<EnumItem>	<Name>SandyBrown</Name>	</EnumItem>
+				<EnumItem>	<Name>Chocolate</Name>	</EnumItem>
+				<EnumItem>	<Name>SaddleBrown</Name>	</EnumItem>
+				<EnumItem>	<Name>Seashell</Name>	</EnumItem>
+				<EnumItem>	<Name>Sienna</Name>	</EnumItem>
+				<EnumItem>	<Name>LightSalmon</Name>	</EnumItem>
+				<EnumItem>	<Name>Coral</Name>	</EnumItem>
+				<EnumItem>	<Name>OrangeRed</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkSalmon</Name>	</EnumItem>
+				<EnumItem>	<Name>Tomato</Name>	</EnumItem>
+				<EnumItem>	<Name>MistyRose</Name>	</EnumItem>
+				<EnumItem>	<Name>Salmon</Name>	</EnumItem>
+				<EnumItem>	<Name>Snow</Name>	</EnumItem>
+				<EnumItem>	<Name>LightCoral</Name>	</EnumItem>
+				<EnumItem>	<Name>RosyBrown</Name>	</EnumItem>
+				<EnumItem>	<Name>IndianRed</Name>	</EnumItem>
+				<EnumItem>	<Name>Red</Name>	</EnumItem>
+				<EnumItem>	<Name>Brown</Name>	</EnumItem>
+				<EnumItem>	<Name>FireBrick</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkRed</Name>	</EnumItem>
+				<EnumItem>	<Name>Maroon</Name>	</EnumItem>
+				<EnumItem>	<Name>White</Name>	</EnumItem>
+				<EnumItem>	<Name>WhiteSmoke</Name>	</EnumItem>
+				<EnumItem>	<Name>Gainsboro</Name>	</EnumItem>
+				<EnumItem>	<Name>LightGray</Name>	</EnumItem>
+				<EnumItem>	<Name>Silver</Name>	</EnumItem>
+				<EnumItem>	<Name>DarkGray</Name>	</EnumItem>
+				<EnumItem>	<Name>Gray</Name>	</EnumItem>
+				<EnumItem>	<Name>DimGray</Name>	</EnumItem>
+				<EnumItem>	<Name>Black</Name>	</EnumItem>
+			</EnumItems>					
+		</CustomEnum>			
+	</CustomEnums>
+	<Groups>
+		<Group>
+		  <GroupId>Series.Series.Other</GroupId>
+		  <Name>Other</Name>
+		  <Desc>Other properties used</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.Markers</GroupId>
+		  <Name>Marker Properties</Name>
+		  <Desc>Marker Properties are used mostly with Line and Point charts.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.Border</GroupId>
+		  <Name>Border Properties</Name>
+		  <Desc>Border properties add a line around the column or bar.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.Label</GroupId>
+		  <Name>Labels and Fonts</Name>
+		  <Desc>Labels and Fonts for the result of the aggregation.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.Axis</GroupId>
+		  <Name>Axis Selection</Name>
+		  <Desc>Select axis for the series</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.3DOnly</GroupId>
+		  <Name>3D Only Properties</Name>
+		  <Desc>Properties that only apply if 3D is enabled. 3D cannot be enabled via this tool by design.</Desc>
+		</Group>		
+		<Group>
+		  <GroupId>Series.Series.Common</GroupId>
+		  <Name>Common Properties</Name>
+		  <Desc>Common Properties for the series.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Pie.Collected</GroupId>
+		  <Name>Collected Properties</Name>
+		  <Desc>Properties to collect a number of smaller slices into one.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Pie.LabelLines</GroupId>
+		  <Name>Label Line Properties</Name>
+		  <Desc>Properties for the line pointing to the label. Only applies if using PieLabelStyle=Outside</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Pie.GeneralPie</GroupId>
+		  <Name>General Pie Settings</Name>
+		  <Desc>General settings for the pie chart type.</Desc>
+		</Group>		
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.doughnut.LabelLinesDoughnut</GroupId>
+		  <Name>Label Line Properties</Name>
+		  <Desc>Label Lines for the Doughnut chart. Only applies if PieLabelStyle is set to Outside.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.doughnut.CollectedDoughnut</GroupId>
+		  <Name>Collected Properties</Name>
+		  <Desc>Used when collecting a number of slices into one piece.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.doughnut.GeneralDoughnut</GroupId>
+		  <Name>General Doughnut Settings</Name>
+		  <Desc>General settings for the doughnut chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Column.General</GroupId>
+		  <Name>General Column Settings</Name>
+		  <Desc>General settings for the column chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.StackedColumn.General</GroupId>
+		  <Name>General Column Settings</Name>
+		  <Desc>General settings for the column chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.StackedColumn100.General</GroupId>
+		  <Name>General Column Settings</Name>
+		  <Desc>General settings for the column chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Area.General</GroupId>
+		  <Name>General Area Settings</Name>
+		  <Desc>General settings for the area chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.PixelWidth</GroupId>
+		  <Name>Pixel Width Settings</Name>
+		  <Desc>Settings for the pixel width and spacing.</Desc>
+		</Group>		
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.3DOnly</GroupId>
+		  <Name>3D Only Settings</Name>
+		  <Desc>Properties that only apply if 3D is enabled. 3D cannot be enabled via this tool by design.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Bar.General</GroupId>
+		  <Name>General Bar Settings</Name>
+		  <Desc>General settings for the bar chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.StackedBar.General</GroupId>
+		  <Name>General StackedBar Settings</Name>
+		  <Desc>General settings for the stacked bar chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.StackedBar100.General</GroupId>
+		  <Name>General StackedBar100 Settings</Name>
+		  <Desc>General settings for the stacked bar 100 chart type.</Desc>
+		</Group>
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Line.General</GroupId>
+		  <Name>General Line Chart Settings (width of line is set on BorderWidth on the series itself)</Name>
+		  <Desc>General settings for the line chart type.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Funnel.General</GroupId>
+		  <Name>General Funnel Chart Settings</Name>
+		  <Desc>General settings for the funnel chart type.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Funnel.Label</GroupId>
+		  <Name>Label Settings</Name>
+		  <Desc>Label settings for the funnel chart type.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Point.General</GroupId>
+		  <Name>General Point Chart Settings</Name>
+		  <Desc>General settings for the point chart type.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Bubble.General</GroupId>
+		  <Name>General Bubble Chart Settings</Name>
+		  <Desc>General settings for the bubble chart type.</Desc>
+		</Group>	
+		<Group>
+		  <GroupId>Series.Series.CustomProperties.Bubble.Other</GroupId>
+		  <Name>Other Rarely Used Settings</Name>
+		  <Desc>Other rarely used settings for the bubble chart type.</Desc>
+		</Group>			
+	</Groups>
+</Chart>

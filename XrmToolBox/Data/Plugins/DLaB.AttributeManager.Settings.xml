@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <TempSchemaPostfix>_t_</TempSchemaPostfix>
+  <Version>1.2019.3.22</Version>
+</Config>

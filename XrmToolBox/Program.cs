@@ -256,13 +256,19 @@ Please start XrmToolBox again to fix this problem",
                 {
                     return;
                 }
-
-                foreach (var arg in args)
+                if (Debugger.IsAttached)
                 {
-                    if (arg.ToLower().StartsWith("/overridepath:"))
+                    Paths.OverrideRootPath(new DirectoryInfo(Application.StartupPath).Parent.Parent.GetDirectories("Data").Single().FullName);
+                }
+                else
+                {
+                    foreach (var arg in args)
                     {
-                        var parts = arg.Split(':');
-                        Paths.OverrideRootPath(string.Join(":", parts.Skip(1)));
+                        if (arg.ToLower().StartsWith("/overridepath:"))
+                        {
+                            var parts = arg.Split(':');
+                            Paths.OverrideRootPath(string.Join(":", parts.Skip(1)));
+                        }
                     }
                 }
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <AddMissingExtensionOnDiskWrite>false</AddMissingExtensionOnDiskWrite>
+  <AutoSaveWhenLeaving>false</AutoSaveWhenLeaving>
+  <DisplayExplorerSearchBarOnTop>false</DisplayExplorerSearchBarOnTop>
+  <ExcludedPrefixes>msdyn_,adx_,cc_MscrmControls</ExcludedPrefixes>
+  <ExpandAllOnLoadingResources>false</ExpandAllOnLoadingResources>
+  <ForceResourceUpdate>false</ForceResourceUpdate>
+  <IgnoredLocalFiles />
+  <LoadManaged>false</LoadManaged>
+  <LoadOnlyValidExtensions>false</LoadOnlyValidExtensions>
+  <LoadSystemHiddenResources>false</LoadSystemHiddenResources>
+  <LocalFilesOutOfDateOnLoad>true</LocalFilesOutOfDateOnLoad>
+  <ObfuscateJavascript>false</ObfuscateJavascript>
+  <PendingUpdatesDockState>DockLeftAutoHide</PendingUpdatesDockState>
+  <PropertiesDockState>DockRight</PropertiesDockState>
+  <PushTsMapFiles>false</PushTsMapFiles>
+  <RemoveCssComments>false</RemoveCssComments>
+  <SaveOnDisk>false</SaveOnDisk>
+  <SettingsDockState>DockRight</SettingsDockState>
+  <SyncMatchingJsFilesAsExtensionless>true</SyncMatchingJsFilesAsExtensionless>
+  <TreeviewDockState>DockLeft</TreeviewDockState>
+</Settings>
