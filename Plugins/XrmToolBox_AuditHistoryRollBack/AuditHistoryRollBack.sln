@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29418.71
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditHistoryRollBack", "AuditHistoryRollBack\AuditHistoryRollBack.csproj", "{4C56CBF7-01BC-45B2-9F07-8C954A02336B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C56CBF7-01BC-45B2-9F07-8C954A02336B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C56CBF7-01BC-45B2-9F07-8C954A02336B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C56CBF7-01BC-45B2-9F07-8C954A02336B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C56CBF7-01BC-45B2-9F07-8C954A02336B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A18773D7-AF77-4584-A1C6-471BD71BE157}
+	EndGlobalSection
+EndGlobal
