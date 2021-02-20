@@ -33,6 +33,7 @@ namespace MscrmTools.WebresourcesManager
         private ResourcePropertiesDialog rpd;
         private SettingsDialog sd;
         private WebresourcesTreeView tv;
+        private LocalSettings localSettings;
 
         #region IGitHubPlugin
 
@@ -136,6 +137,26 @@ namespace MscrmTools.WebresourcesManager
         {
             tv.Service = newService;
             tv.OrganizationMajorVersion = detail.OrganizationMajorVersion;
+
+            if (SettingsManager.Instance.TryLoad(GetType(), out LocalSettings s, detail.ConnectionId.ToString()))
+            {
+                localSettings = s;
+            }
+            else
+            {
+                localSettings = new LocalSettings();
+            }
+
+            if (detail.OrganizationMajorVersion < 8 || detail.OrganizationMajorVersion == 8 && detail.OrganizationMajorVersion < 2)
+            {
+                Webresource.Columns.Columns.Remove("dependencyxml");
+                Webresource.LazyLoadingColumns.Columns.Remove("dependencyxml");
+            }
+            else
+            {
+                if (!Webresource.Columns.Columns.Contains("dependencyxml")) Webresource.Columns.Columns.Add("dependencyxml");
+                if (!Webresource.LazyLoadingColumns.Columns.Contains("dependencyxml")) Webresource.LazyLoadingColumns.Columns.Add("dependencyxml");
+            }
 
             base.UpdateConnection(newService, detail, actionName, parameter);
         }
@@ -392,6 +413,33 @@ Are you sure you want to delete this webresource?",
                 return;
             }
 
+            if (!resource.IsLoaded)
+            {
+                LazyLoadWebResource(resource);
+            }
+            else
+            {
+                DisplayContentForm(resource);
+            }
+        }
+
+        private void LazyLoadWebResource(Webresource resource)
+        {
+            WorkAsync(
+                new WorkAsyncInfo("Loading web resource...", e =>
+                {
+                    resource.LazyLoadWebResource(Service);
+                })
+                {
+                    PostWorkCallBack = e =>
+                    {
+                        DisplayContentForm(resource);
+                    }
+                });
+        }
+
+        private void DisplayContentForm(Webresource resource)
+        {
             BaseContentForm content = null;
 
             switch (resource.Type)
@@ -1004,15 +1052,18 @@ Are you sure you want to delete this webresource?",
                 // Let the user decides where to find files
                 var fbd = new CustomFolderBrowserDialog(true);
 
-                if (!string.IsNullOrWhiteSpace(Settings.Instance.LastFolderUsed) && Directory.Exists(Settings.Instance.LastFolderUsed))
+                if (!string.IsNullOrWhiteSpace(localSettings.FolderPath) && Directory.Exists(localSettings.FolderPath))
                 {
-                    fbd.FolderPath = Settings.Instance.LastFolderUsed;
+                    fbd.FolderPath = localSettings.FolderPath;
                 }
 
                 if (fbd.ShowDialog() == DialogResult.OK)
                 {
                     Settings.Instance.LastFolderUsed = fbd.FolderPath;
                     Settings.Instance.Save();
+
+                    localSettings.FolderPath = fbd.FolderPath;
+                    SettingsManager.Instance.Save(GetType(), localSettings, ConnectionDetail.ConnectionId.ToString());
 
                     if (fbd.FolderPath.EndsWith("\\"))
                         fbd.FolderPath = fbd.FolderPath.Substring(0, fbd.FolderPath.Length - 1);
@@ -1052,15 +1103,18 @@ Are you sure you want to delete this webresource?",
         private void SaveToDisk(IEnumerable<Webresource> resources, bool withRoot = false)
         {
             var fbd = new CustomFolderBrowserDialog(true, false);
-            if (!string.IsNullOrEmpty(Settings.Instance.LastFolderUsed))
+            if (!string.IsNullOrEmpty(localSettings.FolderPath))
             {
-                fbd.FolderPath = Settings.Instance.LastFolderUsed;
+                fbd.FolderPath = localSettings.FolderPath;
             }
 
             if (fbd.ShowDialog() == DialogResult.OK)
             {
                 Settings.Instance.LastFolderUsed = fbd.FolderPath;
                 Settings.Instance.Save();
+
+                localSettings.FolderPath = fbd.FolderPath;
+                SettingsManager.Instance.Save(GetType(), localSettings, ConnectionDetail.ConnectionId.ToString());
 
                 foreach (var resource in resources)
                 {
