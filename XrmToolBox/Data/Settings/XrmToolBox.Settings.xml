@@ -16,9 +16,10 @@
   <DoNotRememberPluginsWithoutConnection>false</DoNotRememberPluginsWithoutConnection>
   <DoNotShowStartPage>false</DoNotShowStartPage>
   <HiddenPlugins />
-  <LastAdvertisementDisplay>2020-10-30T14:55:04.1982245+08:00</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2021-02-20T10:43:45.3891398+08:00</LastAdvertisementDisplay>
+  <LastConnection>SIT</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2020-10-30T16:59:12.9825051+08:00</LastUpdateCheck>
+  <LastUpdateCheck>2021-02-20T10:41:43.0482966+08:00</LastUpdateCheck>
   <MergeConnectionFiles>false</MergeConnectionFiles>
   <MostUsedList>
     <PluginUseCount>
@@ -98,7 +99,7 @@
       <Name>JourneyIntoCRM.XrmToolbox.ERDPlugin.MyPlugin</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>19</Count>
+      <Count>20</Count>
       <Name>MsCrmTools.SiteMapEditor.Plugin</Name>
     </PluginUseCount>
     <PluginUseCount>
@@ -338,9 +339,9 @@
   <ReuseConnections>false</ReuseConnections>
   <ShowPluginUpdatesPanelAtStartup>true</ShowPluginUpdatesPanelAtStartup>
   <FormSize>
-    <Height>696</Height>
+    <Height>1056</Height>
     <IsMaximized>true</IsMaximized>
-    <Width>1296</Width>
+    <Width>1936</Width>
   </FormSize>
   <Theme>Light theme</Theme>
 </Options>

@@ -1,62 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMostRecentlyUsedItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <MostRecentlyUsedItem>
-    <PluginName>A Sample Tool with multiple connections</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:00.3226859+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Access Checker</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:03.134237+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Access Team Template Mover</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:06.1761794+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Advanced Chart Editor</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:08.8161824+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Assembly Recovery Tool</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:25.324444+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Attribute Manager</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-07-27T14:09:40.4989157+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Code Now</PluginName>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
-    <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2020-06-16T13:19:58.148394+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
+    <ConnectionId>3f18c5a2-674b-4427-b36e-648a77183c48</ConnectionId>
+    <ConnectionName>SIT</ConnectionName>
+    <Date>2021-02-20T10:43:45.0590092+08:00</Date>
     <PluginName>SiteMap Editor</PluginName>
-    <ConnectionId>7a213cd5-0a36-4417-a81c-9e6837b3a921</ConnectionId>
-    <ConnectionName>CEP-UAT</ConnectionName>
-    <Date>2020-07-27T14:50:04.4261042+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>Access Security Roles</PluginName>
-    <ConnectionId>7a213cd5-0a36-4417-a81c-9e6837b3a921</ConnectionId>
-    <ConnectionName>CEP-UAT</ConnectionName>
-    <Date>2020-10-30T16:16:16.5983756+08:00</Date>
-  </MostRecentlyUsedItem>
-  <MostRecentlyUsedItem>
-    <PluginName>A Sample Tool</PluginName>
-    <ConnectionId>00000000-0000-0000-0000-000000000000</ConnectionId>
-    <Date>2020-10-30T16:57:41.0179241+08:00</Date>
   </MostRecentlyUsedItem>
 </ArrayOfMostRecentlyUsedItem>
