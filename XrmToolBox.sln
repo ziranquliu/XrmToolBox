@@ -78,6 +78,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AButenko.PersonalViewsDashb
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlbanianXrm.EarlyBound", "Plugins\Early-Bound\AlbanianXrm.EarlyBound\AlbanianXrm.EarlyBound.csproj", "{E047E333-0237-4FD9-B80A-1757D706630F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttachmentsReversibleCopy", "Plugins\DynamicsCrm_AttachmentsReversibleCopy\AttachmentsReversibleCopy\AttachmentsReversibleCopy.csproj", "{FE898239-BC5F-4C25-A718-E73A22BF3908}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.projitems*{2a313862-8d9b-4191-bc2c-015aafce295f}*SharedItemsImports = 4
@@ -727,6 +729,30 @@ Global
 		{E047E333-0237-4FD9-B80A-1757D706630F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{E047E333-0237-4FD9-B80A-1757D706630F}.Release|x86.ActiveCfg = Release|Any CPU
 		{E047E333-0237-4FD9-B80A-1757D706630F}.Release|x86.Build.0 = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|Any CPU.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|x86.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Azure Pipelines|x86.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|x86.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug Without GemBox|x86.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Debug|x86.Build.0 = Debug|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|x86.ActiveCfg = Release|Any CPU
+		{FE898239-BC5F-4C25-A718-E73A22BF3908}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -759,6 +785,7 @@ Global
 		{2DA068AE-5B32-46B4-864D-0D8507A6D981} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 		{DCD36CE2-F839-4C49-B765-4FD2B00F134D} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 		{E047E333-0237-4FD9-B80A-1757D706630F} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
+		{FE898239-BC5F-4C25-A718-E73A22BF3908} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC9B8990-422B-40EC-B51C-5F63F52A37BD}
