@@ -56,7 +56,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McTools.Xrm.Connection.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{A3FFFB54-ACB9-41CC-83A8-3A2F87DADD71}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MscrmTools.FluentQueryExpressions", "MscrmTools.FluentQueryExpressions", "{C9B12FD6-45B1-4F72-8596-B4DE068F4328}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MscrmTools.FluentQueryExpressions", "MscrmTools.FluentQueryExpressions\MscrmTools.FluentQueryExpressions\MscrmTools.FluentQueryExpressions.csproj", "{2A313862-8D9B-4191-BC2C-015AAFCE295F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MscrmTools.FluentQueryExpressions.Test", "MscrmTools.FluentQueryExpressions\MscrmTools.FluentQueryExpressions.Test\MscrmTools.FluentQueryExpressions.Test.csproj", "{11A7B20D-1DC3-4F04-81E5-C912B0017868}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MscrmTools.Shared", "MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.shproj", "{92D1C46C-D61E-4D1A-AAEA-530B53B4AD53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MscrmTools.FluentQueryExpressions.v8", "MscrmTools.FluentQueryExpressions\MscrmTools.FluentQueryExpressions.v8\MscrmTools.FluentQueryExpressions.v8.csproj", "{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.projitems*{2a313862-8d9b-4191-bc2c-015aafce295f}*SharedItemsImports = 4
+		MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.projitems*{92d1c46c-d61e-4d1a-aaea-530b53b4ad53}*SharedItemsImports = 13
+		MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.projitems*{932aca20-4fef-4b4b-8eff-9198ea1e6215}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug Without GemBox|Any CPU = Debug Without GemBox|Any CPU
 		Debug Without GemBox|Mixed Platforms = Debug Without GemBox|Mixed Platforms
@@ -417,6 +432,60 @@ Global
 		{5093677C-F49B-4249-BEC1-E117E62255AD}.Release|Mixed Platforms.Build.0 = Release|x86
 		{5093677C-F49B-4249-BEC1-E117E62255AD}.Release|x86.ActiveCfg = Release|x86
 		{5093677C-F49B-4249-BEC1-E117E62255AD}.Release|x86.Build.0 = Release|x86
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|x86.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug Without GemBox|x86.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Debug|x86.Build.0 = Debug|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|x86.ActiveCfg = Release|Any CPU
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F}.Release|x86.Build.0 = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|x86.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug Without GemBox|x86.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Debug|x86.Build.0 = Debug|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|x86.ActiveCfg = Release|Any CPU
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868}.Release|x86.Build.0 = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|x86.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug Without GemBox|x86.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Debug|x86.Build.0 = Debug|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|x86.ActiveCfg = Release|Any CPU
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -439,9 +508,13 @@ Global
 		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB} = {A3FFFB54-ACB9-41CC-83A8-3A2F87DADD71}
 		{5093677C-F49B-4249-BEC1-E117E62255AD} = {DF140E4E-3A3C-48CA-8C9E-9D904C991BE9}
 		{A3FFFB54-ACB9-41CC-83A8-3A2F87DADD71} = {DF140E4E-3A3C-48CA-8C9E-9D904C991BE9}
+		{2A313862-8D9B-4191-BC2C-015AAFCE295F} = {C9B12FD6-45B1-4F72-8596-B4DE068F4328}
+		{11A7B20D-1DC3-4F04-81E5-C912B0017868} = {C9B12FD6-45B1-4F72-8596-B4DE068F4328}
+		{92D1C46C-D61E-4D1A-AAEA-530B53B4AD53} = {C9B12FD6-45B1-4F72-8596-B4DE068F4328}
+		{932ACA20-4FEF-4B4B-8EFF-9198EA1E6215} = {C9B12FD6-45B1-4F72-8596-B4DE068F4328}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {C1D2833A-693B-47BA-B637-789FC4C9E532}
+		SolutionGuid = {E37235A4-6179-4604-92CE-94FB4EB89388}
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 2bf66b53-ea6f-433b-b455-00e70ee33cd0
