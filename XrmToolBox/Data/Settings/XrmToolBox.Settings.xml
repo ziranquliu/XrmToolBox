@@ -17,9 +17,8 @@
   <DoNotShowStartPage>false</DoNotShowStartPage>
   <HiddenPlugins />
   <LastAdvertisementDisplay>2021-02-20T10:43:45.3891398+08:00</LastAdvertisementDisplay>
-  <LastConnection>SIT</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2021-02-20T10:41:43.0482966+08:00</LastUpdateCheck>
+  <LastUpdateCheck>2021-02-20T14:15:56.779482+08:00</LastUpdateCheck>
   <MergeConnectionFiles>false</MergeConnectionFiles>
   <MostUsedList>
     <PluginUseCount>
@@ -322,7 +321,7 @@
   <MruItemsToDisplay>10</MruItemsToDisplay>
   <NumberOfDaysToShowNewRibbon>7</NumberOfDaysToShowNewRibbon>
   <OptinForApplicationInsights>true</OptinForApplicationInsights>
-  <PluginsListDocking>DockLeft</PluginsListDocking>
+  <PluginsListDocking>Document</PluginsListDocking>
   <PluginsListIsHidden>false</PluginsListIsHidden>
   <PluginsStoreShowIncompatible xsi:nil="true" />
   <PluginsStoreShowInstalled xsi:nil="true" />

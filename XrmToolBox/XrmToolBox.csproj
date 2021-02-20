@@ -75,12 +75,6 @@
     <Reference Include="McTools.StopAdvertisement">
       <HintPath>..\LicenseChecker\McTools.StopAdvertisement.dll</HintPath>
     </Reference>
-    <Reference Include="McTools.Xrm.Connection, Version=1.2021.2.40, Culture=neutral, PublicKeyToken=96037217801d9658, processorArchitecture=MSIL">
-      <HintPath>..\packages\MscrmTools.Xrm.Connection.1.2021.2.40\lib\net462\McTools.Xrm.Connection.dll</HintPath>
-    </Reference>
-    <Reference Include="McTools.Xrm.Connection.WinForms, Version=1.2021.2.40, Culture=neutral, PublicKeyToken=f1559f79cf894e27, processorArchitecture=MSIL">
-      <HintPath>..\packages\MscrmTools.Xrm.Connection.1.2021.2.40\lib\net462\McTools.Xrm.Connection.WinForms.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Crm.Sdk.Proxy, Version=9.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CrmSdk.CoreAssemblies.9.0.2.32\lib\net462\Microsoft.Crm.Sdk.Proxy.dll</HintPath>
     </Reference>
@@ -505,13 +499,21 @@
     <EmbeddedResource Include="Images\progress.gif" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\dockpanelsuite\ThemeVS2015.csproj">
-      <Project>{1807dcc8-f938-45df-a643-31c18781d2d8}</Project>
+    <ProjectReference Include="..\dockpanelsuite\WinFormsUI\ThemeVS2015.csproj">
+      <Project>{007d4ac8-948f-4816-86ad-b9d1343672c1}</Project>
       <Name>ThemeVS2015</Name>
     </ProjectReference>
-    <ProjectReference Include="..\dockpanelsuite\WinFormsUI.csproj">
-      <Project>{786028ab-af75-4f09-a42b-87298545f8d2}</Project>
+    <ProjectReference Include="..\dockpanelsuite\WinFormsUI\WinFormsUI.csproj">
+      <Project>{c75532c4-765b-418e-b09b-46d36b2abdb1}</Project>
       <Name>WinFormsUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MscrmTools.Xrm.Connection\McTools.Xrm.Connection.WinForms\McTools.Xrm.Connection.WinForms.csproj">
+      <Project>{eeb5c09f-cec6-4fb5-87b5-ae61ae89c9eb}</Project>
+      <Name>McTools.Xrm.Connection.WinForms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MscrmTools.Xrm.Connection\McTools.Xrm.Connection\McTools.Xrm.Connection.csproj">
+      <Project>{c3824c2c-6e2e-4fde-a2aa-229bbc7c3b1f}</Project>
+      <Name>McTools.Xrm.Connection</Name>
     </ProjectReference>
     <ProjectReference Include="..\XrmToolBox.AutoUpdater\XrmToolBox.AutoUpdater.csproj">
       <Project>{564c72c8-586e-4218-b6b3-f464f7c3903a}</Project>
@@ -551,7 +553,7 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties BuildVersion_UpdateFileVersion="True" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_BuildVersioningStyle="None.YearStamp.MonthStamp.DayStamp" BuildVersion_ConfigurationName="Release" />
+      <UserProperties BuildVersion_ConfigurationName="Release" BuildVersion_BuildVersioningStyle="None.YearStamp.MonthStamp.DayStamp" BuildVersion_UpdateAssemblyVersion="True" BuildVersion_UpdateFileVersion="True" />
     </VisualStudio>
   </ProjectExtensions>
   <PropertyGroup>
