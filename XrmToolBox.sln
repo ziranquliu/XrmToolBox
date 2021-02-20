@@ -24,12 +24,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DockPanelSuite", "DockPanel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsCrmTools.SiteMapEditor", "Plugins\MsCrmTools.SiteMapEditor\MsCrmTools.SiteMapEditor.csproj", "{5DD2E91B-6431-4391-AC45-205BD1B67818}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{9B81C238-041D-49C5-A9E3-CF19051546F4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McTools.Xrm.Connection", "Tools\McTools.Xrm.Connection\McTools.Xrm.Connection.csproj", "{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "McTools.Xrm.Connection.WinForms", "Tools\McTools.Xrm.Connection.WinForms\McTools.Xrm.Connection.WinForms.csproj", "{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsUI", "dockpanelsuite\WinFormsUI.csproj", "{786028AB-AF75-4F09-A42B-87298545F8D2}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThemeVS2015", "dockpanelsuite\ThemeVS2015.csproj", "{1807DCC8-F938-45DF-A643-31C18781D2D8}"
@@ -166,42 +160,6 @@ Global
 		{5DD2E91B-6431-4391-AC45-205BD1B67818}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{5DD2E91B-6431-4391-AC45-205BD1B67818}.Release|x86.ActiveCfg = Release|Any CPU
 		{5DD2E91B-6431-4391-AC45-205BD1B67818}.Release|x86.Build.0 = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|Any CPU.ActiveCfg = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|Any CPU.Build.0 = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|x86.ActiveCfg = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug Without GemBox|x86.Build.0 = Debug Without GemBox|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Debug|x86.Build.0 = Debug|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|x86.ActiveCfg = Release|Any CPU
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F}.Release|x86.Build.0 = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|Any CPU.ActiveCfg = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|Any CPU.Build.0 = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|x86.ActiveCfg = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug Without GemBox|x86.Build.0 = Debug Without GemBox|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Debug|x86.Build.0 = Debug|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|x86.ActiveCfg = Release|Any CPU
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB}.Release|x86.Build.0 = Release|Any CPU
 		{786028AB-AF75-4F09-A42B-87298545F8D2}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
 		{786028AB-AF75-4F09-A42B-87298545F8D2}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
 		{786028AB-AF75-4F09-A42B-87298545F8D2}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
@@ -407,8 +365,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{5BF1E228-F898-40CF-B8FB-8412D8C81CFF} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 		{5DD2E91B-6431-4391-AC45-205BD1B67818} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
-		{C3824C2C-6E2E-4FDE-A2AA-229BBC7C3B1F} = {9B81C238-041D-49C5-A9E3-CF19051546F4}
-		{EEB5C09F-CEC6-4FB5-87B5-AE61AE89C9EB} = {9B81C238-041D-49C5-A9E3-CF19051546F4}
 		{786028AB-AF75-4F09-A42B-87298545F8D2} = {9BEE526D-BB08-46CC-AF90-EB2F10A14696}
 		{1807DCC8-F938-45DF-A643-31C18781D2D8} = {9BEE526D-BB08-46CC-AF90-EB2F10A14696}
 		{2DA068AE-5B32-46B4-864D-0D8507A6D981} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
@@ -422,8 +378,8 @@ Global
 		{C68DD0C7-C189-464A-A03D-CB7FBD56C2E8} = {9BEE526D-BB08-46CC-AF90-EB2F10A14696}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		BuildVersion_ConfigurationName = Release
 		SolutionGuid = {5CC3AFE2-F092-40F3-A540-539389A045B6}
+		BuildVersion_ConfigurationName = Release
 	EndGlobalSection
 	GlobalSection(CodealikeProperties) = postSolution
 		SolutionGuid = 2bf66b53-ea6f-433b-b455-00e70ee33cd0
