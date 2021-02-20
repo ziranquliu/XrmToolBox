@@ -84,6 +84,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuditHistoryRollBack", "Plu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BDK.XrmToolBox.RecycleBin", "Plugins\XrmToolBoxPlugins\BDK.XrmToolBox\BDK.XrmToolBox.RecycleBin\BDK.XrmToolBox.RecycleBin.csproj", "{8D2C8BFC-9031-4A03-8E65-540CD27C5B7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkAddressVerifier", "Plugins\BulkAddressVerifier\BulkAddressVerifier.csproj", "{DFEE86EE-5BE4-42A4-953E-286128B8035C}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		MscrmTools.FluentQueryExpressions\MscrmTools.Shared\MscrmTools.Shared.projitems*{2a313862-8d9b-4191-bc2c-015aafce295f}*SharedItemsImports = 4
@@ -805,6 +807,30 @@ Global
 		{8D2C8BFC-9031-4A03-8E65-540CD27C5B7D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{8D2C8BFC-9031-4A03-8E65-540CD27C5B7D}.Release|x86.ActiveCfg = Release|Any CPU
 		{8D2C8BFC-9031-4A03-8E65-540CD27C5B7D}.Release|x86.Build.0 = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|Any CPU.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|x86.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Azure Pipelines|x86.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|Any CPU.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|x86.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug Without GemBox|x86.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Debug|x86.Build.0 = Debug|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|x86.ActiveCfg = Release|Any CPU
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -840,6 +866,7 @@ Global
 		{FE898239-BC5F-4C25-A718-E73A22BF3908} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 		{4C56CBF7-01BC-45B2-9F07-8C954A02336B} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 		{8D2C8BFC-9031-4A03-8E65-540CD27C5B7D} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
+		{DFEE86EE-5BE4-42A4-953E-286128B8035C} = {1A7814D2-1185-484E-92CC-7DD71DDE6488}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DC9B8990-422B-40EC-B51C-5F63F52A37BD}

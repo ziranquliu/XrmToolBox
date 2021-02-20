@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{DFEE86EE-5BE4-42A4-953E-286128B8035C}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>Library</OutputType>
+    <AssemblyName>BulkAddressVerifier</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json" />
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="Microsoft.Xrm.Sdk">
+      <HintPath>..\MsCrmTools.AttributeBulkUpdater\bin\coretools\Microsoft.Xrm.Sdk.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier.BingService\BingGeocodingService.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier.Models\EntityModel.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier.Models\ViewModel.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\Address.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\BingAddress.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\BingMapGeocodeResponse.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\BulkAddressVerifier.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\BulkVerifier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SharpXrm.BulkAddressVerifier\GeocodePoint.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\Plugin.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\Point.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\Resource.cs" />
+    <Compile Include="SharpXrm.BulkAddressVerifier\ResourceSet.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SharpXrm.BulkAddressVerifier\BulkAddressVerifier.resources" />
+    <EmbeddedResource Include="SharpXrm.BulkAddressVerifier\Resources.close.png" />
+    <EmbeddedResource Include="SharpXrm.BulkAddressVerifier\sadax-32.png" />
+    <EmbeddedResource Include="SharpXrm.BulkAddressVerifier\sadax-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MscrmTools.Xrm.Connection\McTools.Xrm.Connection\McTools.Xrm.Connection.csproj">
+      <Project>{c3824c2c-6e2e-4fde-a2aa-229bbc7c3b1f}</Project>
+      <Name>McTools.Xrm.Connection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\XrmToolBox.Extensibility\XrmToolBox.Extensibility.csproj">
+      <Project>{df77aea3-43f7-403c-91af-3023a3bb06ec}</Project>
+      <Name>XrmToolBox.Extensibility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>IF NOT EXIST "$(SolutionDir)XrmToolBox\Data\Plugins\" mkdir "$(SolutionDir)XrmToolBox\Data\Plugins\"
+move /Y $(TargetFileName) "$(SolutionDir)XrmToolBox\Data\Plugins\"</PostBuildEvent>
+  </PropertyGroup>
+</Project>
