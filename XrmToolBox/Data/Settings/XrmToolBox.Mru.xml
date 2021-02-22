@@ -1,9 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ArrayOfMostRecentlyUsedItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <MostRecentlyUsedItem>
-    <ConnectionId>3f18c5a2-674b-4427-b36e-648a77183c48</ConnectionId>
-    <ConnectionName>SIT</ConnectionName>
-    <Date>2021-02-20T10:43:45.0590092+08:00</Date>
-    <PluginName>SiteMap Editor</PluginName>
-  </MostRecentlyUsedItem>
-</ArrayOfMostRecentlyUsedItem>
+<ArrayOfMostRecentlyUsedItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" />

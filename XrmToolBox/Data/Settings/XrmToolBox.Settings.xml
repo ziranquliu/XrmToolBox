@@ -14,13 +14,30 @@
   <DisplayRecentlyUpdatedFirst>false</DisplayRecentlyUpdatedFirst>
   <DoNotCheckForUpdates>false</DoNotCheckForUpdates>
   <DoNotRememberPluginsWithoutConnection>false</DoNotRememberPluginsWithoutConnection>
-  <DoNotShowStartPage>true</DoNotShowStartPage>
+  <DoNotShowStartPage>false</DoNotShowStartPage>
   <HiddenPlugins />
-  <LastAdvertisementDisplay>0001-01-01T00:00:00</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2021-02-22T10:27:29.8735681+08:00</LastAdvertisementDisplay>
   <LastPlugin />
-  <LastUpdateCheck>2021-02-22T09:58:40.6693562+08:00</LastUpdateCheck>
-  <MergeConnectionFiles>false</MergeConnectionFiles>
-  <MostUsedList />
+  <LastUpdateCheck>2021-02-22T10:50:13.3190008+08:00</LastUpdateCheck>
+  <MergeConnectionFiles>true</MergeConnectionFiles>
+  <MostUsedList>
+    <PluginUseCount>
+      <Count>1</Count>
+      <Name>AshV.WebApiTester.XTB.WebApiTester</Name>
+    </PluginUseCount>
+    <PluginUseCount>
+      <Count>2</Count>
+      <Name>MsCrmTools.SiteMapEditor.Plugin</Name>
+    </PluginUseCount>
+    <PluginUseCount>
+      <Count>1</Count>
+      <Name>ManagedSolutionSitemapFixer.ManagedSolutionSitemapFixerPlugin</Name>
+    </PluginUseCount>
+    <PluginUseCount>
+      <Count>1</Count>
+      <Name>Norriq.XrmToolBox.YourEntityAttributeMappingsCustomized.CustomizerPlugin</Name>
+    </PluginUseCount>
+  </MostUsedList>
   <MruItemsToDisplay>10</MruItemsToDisplay>
   <NumberOfDaysToShowNewRibbon>7</NumberOfDaysToShowNewRibbon>
   <OptinForApplicationInsights>true</OptinForApplicationInsights>
@@ -31,8 +48,8 @@
   <PluginsStoreShowNew xsi:nil="true" />
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip />
-  <RememberSession>false</RememberSession>
-  <ReuseConnections>false</ReuseConnections>
+  <RememberSession>true</RememberSession>
+  <ReuseConnections>true</ReuseConnections>
   <ShowPluginUpdatesPanelAtStartup>true</ShowPluginUpdatesPanelAtStartup>
   <FormSize>
     <Height>1056</Height>

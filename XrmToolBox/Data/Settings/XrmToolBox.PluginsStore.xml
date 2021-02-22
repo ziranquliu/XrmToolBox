@@ -3,7 +3,7 @@
   <DisplayPluginsStoreOnStartup>false</DisplayPluginsStoreOnStartup>
   <IsInitialized>true</IsInitialized>
   <PluginsStoreShowIncompatible xsi:nil="true" />
-  <PluginsStoreShowInstalled>true</PluginsStoreShowInstalled>
+  <PluginsStoreShowInstalled>false</PluginsStoreShowInstalled>
   <PluginsStoreShowNew xsi:nil="true" />
   <PluginsStoreShowUpdates xsi:nil="true" />
   <UseLegacy>false</UseLegacy>
