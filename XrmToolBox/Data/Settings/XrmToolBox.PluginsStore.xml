@@ -2,9 +2,9 @@
 <Options xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <DisplayPluginsStoreOnStartup>false</DisplayPluginsStoreOnStartup>
   <IsInitialized>true</IsInitialized>
-  <PluginsStoreShowIncompatible>true</PluginsStoreShowIncompatible>
-  <PluginsStoreShowInstalled>false</PluginsStoreShowInstalled>
-  <PluginsStoreShowNew>true</PluginsStoreShowNew>
+  <PluginsStoreShowIncompatible xsi:nil="true" />
+  <PluginsStoreShowInstalled>true</PluginsStoreShowInstalled>
+  <PluginsStoreShowNew xsi:nil="true" />
   <PluginsStoreShowUpdates xsi:nil="true" />
   <UseLegacy>false</UseLegacy>
 </Options>
