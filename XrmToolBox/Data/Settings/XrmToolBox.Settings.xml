@@ -16,9 +16,10 @@
   <DoNotRememberPluginsWithoutConnection>false</DoNotRememberPluginsWithoutConnection>
   <DoNotShowStartPage>false</DoNotShowStartPage>
   <HiddenPlugins />
-  <LastAdvertisementDisplay>2021-03-02T11:06:25.3965689+08:00</LastAdvertisementDisplay>
+  <LastAdvertisementDisplay>2021-04-21T11:20:03.1179236+08:00</LastAdvertisementDisplay>
+  <LastConnection>CEP-PROD</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2021-04-21T08:49:51.4597233+08:00</LastUpdateCheck>
+  <LastUpdateCheck>2021-04-21T13:35:40.9228683+08:00</LastUpdateCheck>
   <MergeConnectionFiles>true</MergeConnectionFiles>
   <MostUsedList>
     <PluginUseCount>
@@ -26,7 +27,7 @@
       <Name>AshV.WebApiTester.XTB.WebApiTester</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>4</Count>
+      <Count>7</Count>
       <Name>MsCrmTools.SiteMapEditor.Plugin</Name>
     </PluginUseCount>
     <PluginUseCount>

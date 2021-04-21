@@ -114,6 +114,34 @@
       <UserName />
       <WebApplicationUrl>https://cepuat.lynkco.com/</WebApplicationUrl>
     </ConnectionDetail>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>51f81489-12ee-4a9e-aaae-a2591f45987d</AzureAdAppId>
+      <ConnectionId>cb1bb63d-a3e3-40b2-9f0c-a6cd1de1aae8</ConnectionId>
+      <ConnectionName>CEP-PROD</ConnectionName>
+      <IsCustomAuth>false</IsCustomAuth>
+      <IsFromSdkLoginCtrl>true</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>mscrm</Organization>
+      <OrganizationDataServiceUrl>https://mscrm.lynkco.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>mscrm</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://mscrm.lynkco.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>CEPUAT</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://cepuat.lynkco.com/</OriginalUrl>
+      <ReplyUrl>app://58145b91-0c36-4500-8554-080854f2ac97/</ReplyUrl>
+      <SavePassword>false</SavePassword>
+      <ServerName>mscrm.lynkco.com</ServerName>
+      <ServerPort>80</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserName />
+      <WebApplicationUrl>https://mscrm.lynkco.com/</WebApplicationUrl>
+    </ConnectionDetail>
   </Connections>
   <IsReadOnly>false</IsReadOnly>
   <UseCustomProxy>false</UseCustomProxy>

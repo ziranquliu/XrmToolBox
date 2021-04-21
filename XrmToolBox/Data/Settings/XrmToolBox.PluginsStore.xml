@@ -4,7 +4,7 @@
   <IsInitialized>true</IsInitialized>
   <PluginsStoreShowIncompatible xsi:nil="true" />
   <PluginsStoreShowInstalled>false</PluginsStoreShowInstalled>
-  <PluginsStoreShowNew xsi:nil="true" />
-  <PluginsStoreShowUpdates xsi:nil="true" />
+  <PluginsStoreShowNew>true</PluginsStoreShowNew>
+  <PluginsStoreShowUpdates>true</PluginsStoreShowUpdates>
   <UseLegacy>false</UseLegacy>
 </Options>
