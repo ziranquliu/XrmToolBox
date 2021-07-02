@@ -1,0 +1,78 @@
+[
+  {
+    "DataTypeName": "Currency",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "DateAndTime.DateAndTime",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "DateAndTime.DateOnly",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "Decimal",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "Enum",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "FP",
+    "IsDeprecated":  false
+  },
+  {
+    "DataTypeName": "Multiple",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "OptionSet",
+    "IsDeprecated": true
+  },
+  {
+    "DataTypeName": "SingleLine.Email",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "SingleLine.Phone",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "SingleLine.Text",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "SingleLine.TextArea",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "SingleLine.Ticker",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "SingleLine.URL",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "TwoOptions",
+    "IsDeprecated": true
+  },
+  {
+    "DataTypeName": "Whole.None",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "Choice",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "Yes/No",
+    "IsDeprecated": false
+  },
+  {
+    "DataTypeName": "Lookup.Simple",
+    "IsDeprecated": false
+  }
+]

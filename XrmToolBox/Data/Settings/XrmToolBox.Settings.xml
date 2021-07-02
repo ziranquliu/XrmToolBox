@@ -6,7 +6,7 @@
   <CloseOpenedPluginsSilently>false</CloseOpenedPluginsSilently>
   <ClosePluginsSilentlyOnWindowsShutdown>true</ClosePluginsSilentlyOnWindowsShutdown>
   <ConnectionControlsAllowPreReleaseUpdates>false</ConnectionControlsAllowPreReleaseUpdates>
-  <ConnectionControlsVersion>1.2020.12.37</ConnectionControlsVersion>
+  <ConnectionControlsVersion>1.2021.6.44</ConnectionControlsVersion>
   <DisplayLargeIcons>true</DisplayLargeIcons>
   <DisplayOrder>Alphabetically</DisplayOrder>
   <DisplayPluginsStoreOnlyIfUpdates>false</DisplayPluginsStoreOnlyIfUpdates>
@@ -16,18 +16,18 @@
   <DoNotRememberPluginsWithoutConnection>false</DoNotRememberPluginsWithoutConnection>
   <DoNotShowStartPage>false</DoNotShowStartPage>
   <HiddenPlugins />
-  <LastAdvertisementDisplay>2021-04-21T11:20:03.1179236+08:00</LastAdvertisementDisplay>
-  <LastConnection>CEP-PROD</LastConnection>
+  <LastAdvertisementDisplay>2021-07-02T13:18:52.7432477+08:00</LastAdvertisementDisplay>
+  <LastConnection>CEP-SIT</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2021-04-21T13:35:40.9228683+08:00</LastUpdateCheck>
+  <LastUpdateCheck>2021-07-02T14:42:08.0953756+08:00</LastUpdateCheck>
   <MergeConnectionFiles>true</MergeConnectionFiles>
   <MostUsedList>
     <PluginUseCount>
-      <Count>1</Count>
+      <Count>2</Count>
       <Name>AshV.WebApiTester.XTB.WebApiTester</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>7</Count>
+      <Count>10</Count>
       <Name>MsCrmTools.SiteMapEditor.Plugin</Name>
     </PluginUseCount>
     <PluginUseCount>
@@ -48,7 +48,13 @@
   <PluginsStoreShowInstalled xsi:nil="true" />
   <PluginsStoreShowNew xsi:nil="true" />
   <PluginsStoreShowUpdates xsi:nil="true" />
-  <PluginsUpdateSkip />
+  <PluginsUpdateSkip>
+    <PluginUpdateSkip>
+      <Date>2021-07-02T13:16:51.9032965+08:00</Date>
+      <Name>McTools.Xrm.ConnectionControls</Name>
+      <Version>1.2021.6.44</Version>
+    </PluginUpdateSkip>
+  </PluginsUpdateSkip>
   <RememberSession>true</RememberSession>
   <ReuseConnections>true</ReuseConnections>
   <ShowPluginUpdatesPanelAtStartup>true</ShowPluginUpdatesPanelAtStartup>
