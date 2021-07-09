@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PluginUpdates xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Plugins>
+    <PluginUpdate>
+      <Destination>D:\OpenSources\XrmToolBox\XrmToolBox\Data\Plugins\ItAintBoring.XrmToolBox.CanvasAppCodeReuse.dll</Destination>
+      <Source>D:\OpenSources\XrmToolBox\XrmToolBox\Data\NugetPlugins\ItAintBoring.XrmToolBox.CanvasAppCodeReuse.0.5.1.0\ItAintBoring.XrmToolBox.CanvasAppCodeReuse.dll</Source>
+      <RequireRestart>true</RequireRestart>
+    </PluginUpdate>
+    <PluginUpdate>
+      <Destination>D:\OpenSources\XrmToolBox\XrmToolBox\Data\Plugins\Fic.XTB.MarketingCustomChannelManager.dll</Destination>
+      <Source>D:\OpenSources\XrmToolBox\XrmToolBox\Data\NugetPlugins\Fic.XTB.MarketingCustomChannelManager.1.2021.7.2\Fic.XTB.MarketingCustomChannelManager.dll</Source>
+      <RequireRestart>false</RequireRestart>
+    </PluginUpdate>
+    <PluginUpdate>
+      <Destination>D:\OpenSources\XrmToolBox\XrmToolBox\Data\Plugins\Savants.RoleReplicatorControl.dll</Destination>
+      <Source>D:\OpenSources\XrmToolBox\XrmToolBox\Data\NugetPlugins\RoleReplicator.1.2021.7.8\Savants.RoleReplicatorControl.dll</Source>
+      <RequireRestart>true</RequireRestart>
+    </PluginUpdate>
+  </Plugins>
+  <PreviousProcessId>20948</PreviousProcessId>
+</PluginUpdates>
