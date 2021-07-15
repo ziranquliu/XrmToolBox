@@ -19,7 +19,7 @@
   <LastAdvertisementDisplay>2021-07-09T16:39:20.4648632+08:00</LastAdvertisementDisplay>
   <LastConnection>CEP-SIT</LastConnection>
   <LastPlugin />
-  <LastUpdateCheck>2021-07-15T13:13:13.6326636+08:00</LastUpdateCheck>
+  <LastUpdateCheck>2021-07-15T14:04:18.0836689+08:00</LastUpdateCheck>
   <MergeConnectionFiles>true</MergeConnectionFiles>
   <MostUsedList>
     <PluginUseCount>
@@ -47,7 +47,7 @@
       <Name>DLaB.AttributeManager.AttributeManager</Name>
     </PluginUseCount>
     <PluginUseCount>
-      <Count>1</Count>
+      <Count>2</Count>
       <Name>PluginRegistrationUsingXml.PluginRegistration</Name>
     </PluginUseCount>
   </MostUsedList>
@@ -62,7 +62,7 @@
   <PluginsStoreShowUpdates xsi:nil="true" />
   <PluginsUpdateSkip>
     <PluginUpdateSkip>
-      <Date>2021-07-02T13:16:51.9032965+08:00</Date>
+      <Date>2021-07-15T14:01:48.4348581+08:00</Date>
       <Name>McTools.Xrm.ConnectionControls</Name>
       <Version>1.2021.6.44</Version>
     </PluginUpdateSkip>
