@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CrmConnections xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ByPassProxyOnLocal>false</ByPassProxyOnLocal>
+  <Connections>
+    <ConnectionDetail>
+      <AuthType>ActiveDirectory</AuthType>
+      <AzureAdAppId>00000000-0000-0000-0000-000000000000</AzureAdAppId>
+      <ConnectionId>684b422a-4e7d-4a46-901c-d1b38c6c28b8</ConnectionId>
+      <ConnectionName>CEP-SIT</ConnectionName>
+      <HomeRealmUrl />
+      <IsCustomAuth>true</IsCustomAuth>
+      <IsFromSdkLoginCtrl>false</IsFromSdkLoginCtrl>
+      <LastUsedOn>0001-01-01 00:00:00</LastUsedOn>
+      <NewAuthType>AD</NewAuthType>
+      <Organization>CEPSIT</Organization>
+      <OrganizationDataServiceUrl>https://cepsit.lynkco.com/XRMServices/2011/OrganizationData.svc</OrganizationDataServiceUrl>
+      <OrganizationFriendlyName>CEPSIT</OrganizationFriendlyName>
+      <OrganizationServiceUrl>https://cepsit.lynkco.com/XRMServices/2011/Organization.svc</OrganizationServiceUrl>
+      <OrganizationUrlName>cepsit</OrganizationUrlName>
+      <OrganizationVersion>8.2.0.749</OrganizationVersion>
+      <OriginalUrl>https://cepsit.lynkco.com</OriginalUrl>
+      <SavePassword>true</SavePassword>
+      <ServerName>cepsit.lynkco.com</ServerName>
+      <ServerPort>443</ServerPort>
+      <TenantId>00000000-0000-0000-0000-000000000000</TenantId>
+      <Timeout />
+      <TimeoutTicks>1200000000</TimeoutTicks>
+      <UseIfd>false</UseIfd>
+      <UseMfa>false</UseMfa>
+      <UserDomain>cepsit.lynkco.com</UserDomain>
+      <UserName>Lynkco\situser</UserName>
+      <UserPassword>Ozzo50LpFlgE9r22lZOcUA==</UserPassword>
+      <WebApplicationUrl>https://cepsit.lynkco.com/</WebApplicationUrl>
+    </ConnectionDetail>
+  </Connections>
+  <IsReadOnly>false</IsReadOnly>
+  <Name>Connections</Name>
+  <UseCustomProxy>false</UseCustomProxy>
+  <UseDefaultCredentials>false</UseDefaultCredentials>
+  <UseInternetExplorerProxy>false</UseInternetExplorerProxy>
+  <UseMruDisplay>false</UseMruDisplay>
+</CrmConnections>

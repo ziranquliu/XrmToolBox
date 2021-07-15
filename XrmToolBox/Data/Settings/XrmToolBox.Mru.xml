@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ArrayOfMostRecentlyUsedItem xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <MostRecentlyUsedItem>
-    <ConnectionId>fbc7c1fa-930b-48d5-be49-2eed5c2e4916</ConnectionId>
+    <ConnectionId>684b422a-4e7d-4a46-901c-d1b38c6c28b8</ConnectionId>
     <ConnectionName>CEP-SIT</ConnectionName>
-    <Date>2021-07-02T14:41:02.4336562+08:00</Date>
+    <Date>2021-07-15T13:16:57.0734682+08:00</Date>
     <PluginName>SiteMap Editor</PluginName>
   </MostRecentlyUsedItem>
   <MostRecentlyUsedItem>
-    <ConnectionId>cb1bb63d-a3e3-40b2-9f0c-a6cd1de1aae8</ConnectionId>
-    <ConnectionName>CEP-PROD</ConnectionName>
-    <Date>2021-04-21T11:27:40.669361+08:00</Date>
-    <PluginName>SiteMap Editor</PluginName>
+    <ConnectionId>684b422a-4e7d-4a46-901c-d1b38c6c28b8</ConnectionId>
+    <ConnectionName>CEP-SIT</ConnectionName>
+    <Date>2021-07-15T13:17:08.7552739+08:00</Date>
+    <PluginName>Attribute Manager</PluginName>
   </MostRecentlyUsedItem>
   <MostRecentlyUsedItem>
-    <ConnectionId>00000000-0000-0000-0000-000000000000</ConnectionId>
-    <Date>2021-07-02T14:42:15.1255865+08:00</Date>
-    <PluginName>SiteMap Editor</PluginName>
+    <ConnectionId>684b422a-4e7d-4a46-901c-d1b38c6c28b8</ConnectionId>
+    <ConnectionName>CEP-SIT</ConnectionName>
+    <Date>2021-07-15T13:17:29.3333226+08:00</Date>
+    <PluginName>Plugin Registration Using RegXml</PluginName>
   </MostRecentlyUsedItem>
 </ArrayOfMostRecentlyUsedItem>

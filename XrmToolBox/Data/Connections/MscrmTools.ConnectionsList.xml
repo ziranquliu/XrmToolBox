@@ -2,9 +2,18 @@
 <ConnectionsList xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Files>
     <ConnectionFile>
-      <LastUsed>2021-02-22T10:49:15.1831341+08:00</LastUsed>
-      <Name>CEP</Name>
-      <Path>D:\OpenSources\DotNetFramework\XrmToolBox\XrmToolBox\Data\Connections\ConnectionsList.Default.xml</Path>
+      <LastUsed>2021-07-09T16:23:20.2800708+08:00</LastUsed>
+      <Name>Default</Name>
+      <Path>D:\OpenSources\XrmToolBox\XrmToolBox\Data\Connections\ConnectionsList.Default.xml</Path>
+    </ConnectionFile>
+    <ConnectionFile>
+      <LastUsed>2021-07-09T16:22:32.1070473+08:00</LastUsed>
+      <Path>C:\Users\ruifeng.chang\AppData\Roaming\MscrmTools\XrmToolBox\Connections\ConnectionsList.Default.xml</Path>
+    </ConnectionFile>
+    <ConnectionFile>
+      <LastUsed>2021-07-09T16:24:04.4041666+08:00</LastUsed>
+      <Name>Connections</Name>
+      <Path>D:\OpenSources\XrmToolBox\Connections.xml</Path>
     </ConnectionFile>
   </Files>
 </ConnectionsList>
